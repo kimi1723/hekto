@@ -20,6 +20,8 @@ import {
   type HomeHeaderView as View,
 } from "@/helpers/constants/pages";
 
+const viewHandlerId = "view-handler";
+
 const Header = () => {
   const [activeView, setActiveView] = useState<View>("primary");
 
@@ -58,7 +60,11 @@ const Header = () => {
 
         <div className="absolute top-[503px] left-[184px] aspect-square h-[15px] bg-primary rounded-full"></div>
 
-        <div className="flex flex-col gap-4">
+        <div
+          className="flex flex-col gap-4"
+          aria-labelledby={viewHandlerId}
+          aria-live="polite"
+        >
           <Label el="p" variant="bold" className="text-primary">
             {label}
           </Label>
@@ -90,6 +96,7 @@ const Header = () => {
         />
 
         <ViewHandler
+          id={viewHandlerId}
           views={views}
           activeView={activeView}
           onClick={handleActiveView}
