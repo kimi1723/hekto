@@ -11,6 +11,9 @@ export const SUBTITLES_DATA = {
   quaternary: {
     classes: "text-[1rem] leading-[1.25rem] font-semibold",
   },
+  quinary: {
+    classes: "text-[0.75rem] leading-[0.875] font-semibold",
+  },
 } as const;
 
 export interface SubtitlesProps {

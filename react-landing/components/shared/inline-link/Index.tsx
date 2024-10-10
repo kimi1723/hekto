@@ -1,23 +1,22 @@
-import { FC } from "react";
+import { type ReactNode } from "react";
 import Link, { type LinkProps } from "next/link";
 
 import {
   HOCUS_VARIANTS,
   type HocusVariantsProps,
 } from "@/helpers/constants/colors";
-import type ChildrenComponentProps from "@/helpers/types/children-component-props";
 
-interface InlineLinkProps
-  extends LinkProps,
-    HocusVariantsProps,
-    ChildrenComponentProps {}
+interface InlineLinkProps extends LinkProps, HocusVariantsProps {
+  children: ReactNode;
+  className?: string;
+}
 
-const InlineLink: FC<InlineLinkProps> = ({
+const InlineLink = ({
   children,
   className = "",
   variant = "primary",
   ...props
-}) => {
+}: InlineLinkProps) => {
   const classes = `relative flex items-center ${HOCUS_VARIANTS[variant]} focus:outline-none transition-colors ${className}`;
 
   return (

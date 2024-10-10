@@ -62,6 +62,10 @@ const config: Config = {
       "success-dark": "#00994C",
       "success-light": "#92F2BF",
     },
+    boxShadow: {
+      md: "8px 24px 32px -16px #10175026",
+      lg: "8px 64px 80px -16px #10175026",
+    },
     extend: {
       keyframes: {
         dropdown: {

@@ -1,5 +1,3 @@
-import { FC } from "react";
-
 import type { IconValues } from "@/helpers/constants/icons";
 
 export interface GetSvgProps {
@@ -8,19 +6,20 @@ export interface GetSvgProps {
   width?: number;
   height?: number;
   spritePath?: string;
+  fill?: string;
 }
 
-const GetSvg: FC<GetSvgProps> = ({
+const GetSvg = ({
   id,
   className = "",
-  width = "16",
-  height = "16",
+  width = 16,
+  height = 16,
   spritePath = "icons.svg",
   ...props
-}) => {
+}: GetSvgProps) => {
   return (
     <svg className={className} width={width} height={height} {...props}>
-      <use href={`${spritePath}#${id}`} />
+      <use href={`${spritePath}#${id}`}></use>
     </svg>
   );
 };

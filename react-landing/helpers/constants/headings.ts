@@ -18,5 +18,6 @@ export const HEADINGS_DATA = {
 } as const;
 
 export interface HeadingsProps {
+  id?: string;
   variant: keyof typeof HEADINGS_DATA;
 }

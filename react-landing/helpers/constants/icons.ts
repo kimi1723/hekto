@@ -4,8 +4,12 @@ const ICON_IDS = {
   chevronDown: "chevron-down",
   user: "user",
   heart: "heart",
+  heartActive: "heart-active",
   cart: "cart",
   search: "search",
+  zoom: "zoom",
+  check: "check",
+  plus: "plus",
 } as const;
 
 export const {
@@ -14,8 +18,12 @@ export const {
   chevronDown,
   user,
   heart,
+  heartActive,
   cart,
   search,
+  zoom,
+  check,
+  plus,
 } = ICON_IDS;
 
 export type IconValues = (typeof ICON_IDS)[keyof typeof ICON_IDS];

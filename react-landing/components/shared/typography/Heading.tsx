@@ -1,5 +1,3 @@
-import { FC } from "react";
-
 import {
   HEADINGS_DATA,
   type HeadingsProps,
@@ -9,17 +7,19 @@ import type ChildrenComponentProps from "@/helpers/types/children-component-prop
 
 interface HeadingProps extends ChildrenComponentProps, HeadingsProps {}
 
-const Heading: FC<HeadingProps> = ({
+const Heading = ({
+  id,
   children,
   variant,
   className = "",
   el: ProvidedEl,
-}) => {
+}: HeadingProps) => {
   const { el, classes } = HEADINGS_DATA[variant];
   const El = ProvidedEl || el;
 
   return (
     <El
+      id={id}
       className={`${classes} capitalize font-bold tracking-[0.015em] ${className}`}
     >
       {children}

@@ -1,4 +1,4 @@
-import { FC, type ButtonHTMLAttributes } from "react";
+import { type ButtonHTMLAttributes } from "react";
 
 import {
   HOCUS_VARIANTS,
@@ -9,12 +9,12 @@ interface InlineButtonProps
   extends ButtonHTMLAttributes<HTMLButtonElement>,
     HocusVariantsProps {}
 
-const InlineButton: FC<InlineButtonProps> = ({
+const InlineButton = ({
   children,
   className = "",
   variant = "primary",
   ...props
-}) => {
+}: InlineButtonProps) => {
   const classes = `relative flex items-center ${HOCUS_VARIANTS[variant]} focus:outline-none transition-colors ${className}`;
 
   return (

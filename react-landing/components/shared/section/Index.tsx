@@ -1,12 +1,10 @@
-import { FC } from "react";
-
 import type SectionProps from "@/helpers/types/children-component-props";
 
-const Section: FC<SectionProps> = ({
+const Section = ({
   children,
   el = "section",
   className = "",
-}) => {
+}: SectionProps) => {
   const El = el;
 
   return (

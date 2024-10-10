@@ -13,35 +13,41 @@ import { search } from "@/helpers/constants/icons";
 
 const MainNav = () => {
   return (
-    <Section className="flex items-center py-4">
-      <Link href={MAIN_NAV_PAGES.home.path}>
-        <Image src={logo} alt="Hekto logo" width={100} height={28} />
-      </Link>
+    <div className="bg-white">
+      <Section className="flex items-center py-4">
+        <Link href={MAIN_NAV_PAGES.home.path}>
+          <Image src={logo} alt="Hekto logo" width={100} height={28} />
+        </Link>
 
-      <nav className="ml-20">
-        <ul className="flex gap-8">
-          {Object.values(MAIN_NAV_PAGES).map(({ name, path }) => (
-            <li key={name}>
-              <InlineLink href={path}>{name}</InlineLink>
-            </li>
-          ))}
-        </ul>
-      </nav>
+        <nav className="ml-20">
+          <ul className="flex gap-8">
+            {Object.values(MAIN_NAV_PAGES).map(({ name, path }) => (
+              <li key={name}>
+                <InlineLink href={path}>{name}</InlineLink>
+              </li>
+            ))}
+          </ul>
+        </nav>
 
-      <Input
-        type="text"
-        placeholder="Search"
-        aria-label="Search"
-        buttonLabel="Search"
-        icon={true}
-        action={async () => {
-          "use server";
-        }}
-        className="ml-auto"
-      >
-        <Icon id={search} width={24} height={24} className="text-white" />
-      </Input>
-    </Section>
+        <form
+          action={async () => {
+            "use server";
+          }}
+          className="relative ml-auto"
+          role="search"
+          aria-label="products"
+        >
+          <Input
+            type="text"
+            placeholder="Search"
+            buttonLabel="Search products"
+            icon={true}
+          >
+            <Icon id={search} width={24} height={24} className="text-white" />
+          </Input>
+        </form>
+      </Section>
+    </div>
   );
 };
 

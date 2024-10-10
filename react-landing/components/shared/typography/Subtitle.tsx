@@ -1,5 +1,3 @@
-import { FC } from "react";
-
 import {
   SUBTITLES_DATA,
   type SubtitlesProps,
@@ -9,13 +7,13 @@ import type ChildrenComponentProps from "@/helpers/types/children-component-prop
 
 interface SubtitleProps extends ChildrenComponentProps, SubtitlesProps {}
 
-const Subtitle: FC<SubtitleProps> = ({
+const Subtitle = ({
   children,
   variant = "primary",
   className = "",
   el: El = "p",
   ...props
-}) => {
+}: SubtitleProps) => {
   const { classes } = SUBTITLES_DATA[variant];
 
   return (

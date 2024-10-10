@@ -1,7 +1,6 @@
-import { ReactNode, ElementType } from "react";
+import { ElementType, HTMLAttributes } from "react";
 
-interface ChildrenComponentProps {
-  children: ReactNode;
+interface ChildrenComponentProps extends HTMLAttributes<ElementType> {
   el?: ElementType;
   className?: string;
 }
