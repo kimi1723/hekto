@@ -49,7 +49,7 @@ const Header = () => {
     <div className="bg-[#F2F0FF]">
       <Section
         el="header"
-        className="relative w-full pl-[415px] pr-[172px] pb-[34px]"
+        className="relative w-full pl-[415px] pr-[172px] pb-[34px] overflow-hidden"
       >
         {displayedData && (
           <>

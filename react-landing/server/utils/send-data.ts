@@ -1,8 +1,7 @@
 "use server";
 
 import { cookies } from "next/headers";
-import path from "path";
-import { promises as fs } from "fs";
+
 import {
   FILES_MAP,
   type Product,
@@ -11,6 +10,7 @@ import {
 } from "./data-types";
 
 import { fetchProducts } from "./fetch-data";
+import { readWriteFile } from "./helpers";
 
 const handleVariantUpdate = (
   variant: string,
@@ -50,10 +50,9 @@ export const sendData = async (
     if (!userId) throw new Error(`Couldn't get your session.`);
 
     const fileName = FILES_MAP.users.path;
-    const filePath = path.join(process.cwd(), "server", "data", fileName);
+    const [readUsers, writeUsers] = readWriteFile<UsersData>(fileName);
 
-    const fileData = await fs.readFile(filePath, "utf-8");
-    const users = JSON.parse(fileData) as UsersData;
+    const users = await readUsers();
     const userIndex = users.findIndex((user) => user.id === +userId);
 
     if (userIndex === -1)
@@ -68,7 +67,7 @@ export const sendData = async (
 
     user[variant] = updatedList;
 
-    await fs.writeFile(filePath, JSON.stringify(users), "utf-8");
+    await writeUsers(users);
 
     return updatedList;
   } catch (error) {

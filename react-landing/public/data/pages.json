@@ -1,0 +1,46 @@
+{
+  "home": {
+    "headerViews": [
+      {
+        "label": "Best Headphones For Your Life....",
+        "heading": "New trendy collection headphones",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+        "img": {
+          "src": "/images/home/header/headphones.png",
+          "alt": "Great headphones",
+          "height": 692,
+          "width": 706
+        },
+        "discountImg": {
+          "src": "/images/home/header/discount.png",
+          "alt": "",
+          "height": 138.49,
+          "width": 136.56
+        },
+        "discount": "50%"
+      },
+      {
+        "label": "Best Headphones For Your Life....",
+        "heading": "secondary collection headphones",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+        "img": {
+          "src": "/images/home/header/headphones.png",
+          "alt": "Great headphones",
+          "height": 692,
+          "width": 706
+        }
+      },
+      {
+        "label": "Best Headphones For Your Life....",
+        "heading": "tertiary collection headphones",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+        "img": {
+          "src": "/images/home/header/headphones.png",
+          "alt": "Great headphones",
+          "height": 692,
+          "width": 706
+        }
+      }
+    ]
+  }
+}

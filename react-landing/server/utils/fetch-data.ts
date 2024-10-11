@@ -1,34 +1,32 @@
 "use server";
 
-import path from "path";
-import { promises as fs } from "fs";
+import { cookies } from "next/headers";
 
 import {
   FILES_MAP,
+  FileDataForKey,
   HomeViews,
-  PagesData,
   PagesVariants,
-  type ProductsData,
   type ProductsVariants,
-  type UsersData,
   type UsersVariants,
 } from "./data-types";
-import { cookies } from "next/headers";
 
-type FetchData = (
-  key: keyof typeof FILES_MAP
-) => Promise<ProductsData | UsersData | PagesData>;
+import { readWriteFile } from "./helpers";
+
+type FetchData = <T extends keyof typeof FILES_MAP>(
+  key: T
+) => Promise<FileDataForKey<T>>;
 
 const fetchData: FetchData = async (key) => {
   const fileName = FILES_MAP[key].path;
-  const filePath = path.join(process.cwd(), "server", "data", fileName);
+  const [readData] = readWriteFile<FileDataForKey<typeof key>>(fileName);
 
   try {
-    const fileData = await fs.readFile(filePath, "utf-8");
+    const fileData = await readData();
 
     if (!fileData) throw new Error(`Error reading file "${fileName}".`);
 
-    return JSON.parse(fileData);
+    return fileData;
   } catch (error) {
     if (error instanceof Error) throw error;
 
@@ -45,7 +43,7 @@ export const fetchUserData = async (variant: UsersVariants) => {
   if (!id) throw `Couldn't get your session.`;
 
   try {
-    const data = (await fetchData("users")) as UsersData;
+    const data = await fetchData("users");
     const user = data.find((user) => user.id === +id);
 
     if (!user) throw new Error(`User with ID: "${id}" not found.`);
@@ -68,7 +66,7 @@ export const fetchUserData = async (variant: UsersVariants) => {
 
 export const fetchProducts = async (variant: ProductsVariants = "all") => {
   try {
-    const data = (await fetchData("products")) as ProductsData;
+    const data = await fetchData("products");
     const filteredData = data[variant];
 
     if (!filteredData)
@@ -91,7 +89,7 @@ export const fetchFavorites = async () => await fetchUserData("favorites");
 
 export const fetchPage = async (variant: PagesVariants) => {
   try {
-    const data = (await fetchData("pages")) as PagesData;
+    const data = await fetchData("pages");
     const filteredData = data[variant];
 
     if (!filteredData)

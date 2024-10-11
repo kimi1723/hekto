@@ -15,6 +15,17 @@ export const FILES_MAP = {
 
 export type Key = keyof typeof FILES_MAP;
 
+export type FileNames = (typeof FILES_MAP)[Key]["path"];
+
+export type FileDataForKey<T extends keyof typeof FILES_MAP> =
+  T extends "products"
+    ? ProductsData
+    : T extends "users"
+    ? UsersData
+    : T extends "pages"
+    ? PagesData
+    : never;
+
 export type Variants<T extends Key> = (typeof FILES_MAP)[T]["variants"][number];
 
 export type ProductsVariants = Variants<"products">;

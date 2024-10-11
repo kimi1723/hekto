@@ -36,7 +36,7 @@ const FeaturedProducts = () => {
   ));
 
   return (
-    <Section className="my-[100px]">
+    <Section className="my-[100px] overflow-hidden">
       <Heading id={HEADER_ID} variant="secondary" className="mb-12 text-center">
         Featured products
       </Heading>
