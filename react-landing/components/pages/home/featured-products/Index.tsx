@@ -36,7 +36,7 @@ const FeaturedProducts = () => {
   ));
 
   return (
-    <Section className="my-[100px] overflow-hidden">
+    <Section className="my-[100px] overflow-hidden relative">
       <Heading id={HEADER_ID} variant="secondary" className="mb-12 text-center">
         Featured products
       </Heading>
@@ -68,7 +68,9 @@ const handleDisplayProducts = (products: ProductType[]) =>
 
 const handleDisplayError = (error: Error) => <p>Error! {error.message}</p>;
 
-const handleDisplayPending = () => <p>Loading products...</p>;
+const handleDisplayPending = () => (
+  <p className="text-center">Loading products...</p>
+);
 
 const getCarouselControlsClasses = (i: number, view: number) => {
   const isActive = i === view;

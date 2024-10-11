@@ -49,7 +49,7 @@ const Header = () => {
     <div className="bg-[#F2F0FF]">
       <Section
         el="header"
-        className="relative w-full pl-[415px] pr-[172px] pb-[34px] overflow-hidden"
+        className="relative w-full pl-[415px] pr-[172px] pb-[34px] min-h-[759.84px] overflow-hidden"
       >
         {displayedData && (
           <>
@@ -153,7 +153,7 @@ const handleDisplayData = (view: PagesData["home"]["headerViews"]) => {
 const handleDisplayError = (error: Error) => <p>Error! {error.message}</p>;
 
 const handleDisplayPending = () => (
-  <p className="min-h-[725.85px] flex items-center justify-center">
+  <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
     Loading header...
   </p>
 );
