@@ -1,0 +1,526 @@
+{
+  "all": [
+    {
+      "id": 1,
+      "name": "Watches",
+      "code": "Y523201",
+      "originalPrice": 55,
+      "img": {
+        "src": "/images/products/watches.png",
+        "alt": "Great watch"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Headphones",
+      "code": "Y523201",
+      "originalPrice": 99,
+      "img": {
+        "src": "/images/products/headphones.png",
+        "alt": "Great watch"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Laptop",
+      "code": "Y523201",
+      "originalPrice": 3500,
+      "img": {
+        "src": "/images/products/laptop.png",
+        "alt": "Great watch"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Black watches",
+      "code": "Y523201",
+      "originalPrice": 62,
+      "img": {
+        "src": "/images/products/black-watches.png",
+        "alt": "Great watch"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Game console",
+      "code": "Y523201",
+      "originalPrice": 89,
+      "discountedPrice": 76,
+      "img": {
+        "src": "/images/products/game-console.png",
+        "alt": "Great game console"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Shoes",
+      "code": "Y523201",
+      "originalPrice": 75,
+      "discountedPrice": 57,
+      "img": {
+        "src": "/images/products/shoes.png",
+        "alt": "Great shoes"
+      }
+    },
+    {
+      "id": 7,
+      "name": "Perfume",
+      "code": "Y523201",
+      "originalPrice": 29,
+      "discountedPrice": 19,
+      "img": {
+        "src": "/images/products/perfume.png",
+        "alt": "Great perfume"
+      }
+    },
+    {
+      "id": 8,
+      "name": "Present box",
+      "code": "Y523201",
+      "originalPrice": 29,
+      "discountedPrice": 12,
+      "img": {
+        "src": "/images/products/present-box.png",
+        "alt": "Great present box"
+      }
+    },
+    {
+      "id": 9,
+      "name": "Watches",
+      "code": "Y523201",
+      "originalPrice": 76,
+      "discountedPrice": 67,
+      "img": {
+        "src": "/images/products/smart-watches.png",
+        "alt": "Great smart watch"
+      }
+    },
+    {
+      "id": 10,
+      "name": "Ring",
+      "code": "Y523201",
+      "originalPrice": 65,
+      "discountedPrice": 56,
+      "img": {
+        "src": "/images/products/ring.png",
+        "alt": "Great ring"
+      }
+    },
+    {
+      "id": 11,
+      "name": "Laptop3",
+      "code": "Y523201",
+      "originalPrice": 3500,
+      "img": {
+        "src": "/images/products/laptop.png",
+        "alt": "Great watch"
+      }
+    },
+    {
+      "id": 12,
+      "name": "Black watches3",
+      "code": "Y523201",
+      "originalPrice": 62,
+      "img": {
+        "src": "/images/products/black-watches.png",
+        "alt": "Great watch"
+      }
+    },
+    {
+      "id": 13,
+      "name": "Black watches4",
+      "code": "Y523201",
+      "originalPrice": 62,
+      "img": {
+        "src": "/images/products/black-watches.png",
+        "alt": "Great watch"
+      }
+    }
+  ],
+  "featured": [
+    {
+      "id": 1,
+      "name": "Watches",
+      "code": "Y523201",
+      "originalPrice": 55,
+      "img": {
+        "src": "/images/products/watches.png",
+        "alt": "Great watch"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Headphones",
+      "code": "Y523201",
+      "originalPrice": 99,
+      "img": {
+        "src": "/images/products/headphones.png",
+        "alt": "Great watch"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Laptop",
+      "code": "Y523201",
+      "originalPrice": 3500,
+      "img": {
+        "src": "/images/products/laptop.png",
+        "alt": "Great watch"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Black watches",
+      "code": "Y523201",
+      "originalPrice": 62,
+      "img": {
+        "src": "/images/products/black-watches.png",
+        "alt": "Great watch"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Game console",
+      "code": "Y523201",
+      "originalPrice": 89,
+      "discountedPrice": 76,
+      "img": {
+        "src": "/images/products/game-console.png",
+        "alt": "Great game console"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Shoes",
+      "code": "Y523201",
+      "originalPrice": 75,
+      "discountedPrice": 57,
+      "img": {
+        "src": "/images/products/shoes.png",
+        "alt": "Great shoes"
+      }
+    },
+    {
+      "id": 7,
+      "name": "Perfume",
+      "code": "Y523201",
+      "originalPrice": 29,
+      "discountedPrice": 19,
+      "img": {
+        "src": "/images/products/perfume.png",
+        "alt": "Great perfume"
+      }
+    },
+    {
+      "id": 8,
+      "name": "Present box",
+      "code": "Y523201",
+      "originalPrice": 29,
+      "discountedPrice": 12,
+      "img": {
+        "src": "/images/products/present-box.png",
+        "alt": "Great present box"
+      }
+    },
+    {
+      "id": 9,
+      "name": "Watches",
+      "code": "Y523201",
+      "originalPrice": 76,
+      "discountedPrice": 67,
+      "img": {
+        "src": "/images/products/smart-watches.png",
+        "alt": "Great smart watch"
+      }
+    },
+    {
+      "id": 10,
+      "name": "Ring",
+      "code": "Y523201",
+      "originalPrice": 65,
+      "discountedPrice": 56,
+      "img": {
+        "src": "/images/products/ring.png",
+        "alt": "Great ring"
+      }
+    },
+    {
+      "id": 11,
+      "name": "Laptop3",
+      "code": "Y523201",
+      "originalPrice": 3500,
+      "img": {
+        "src": "/images/products/laptop.png",
+        "alt": "Great watch"
+      }
+    },
+    {
+      "id": 12,
+      "name": "Black watches3",
+      "code": "Y523201",
+      "originalPrice": 62,
+      "img": {
+        "src": "/images/products/black-watches.png",
+        "alt": "Great watch"
+      }
+    },
+    {
+      "id": 13,
+      "name": "Black watches4",
+      "code": "Y523201",
+      "originalPrice": 62,
+      "img": {
+        "src": "/images/products/black-watches.png",
+        "alt": "Great watch"
+      }
+    }
+  ],
+  "latest": [
+    {
+      "id": 5,
+      "name": "Game console",
+      "code": "Y523201",
+      "originalPrice": 89,
+      "discountedPrice": 76,
+      "img": {
+        "src": "/images/products/game-console.png",
+        "alt": "Great game console"
+      },
+      "set": "new-arrival"
+    },
+    {
+      "id": 6,
+      "name": "Shoes",
+      "code": "Y523201",
+      "originalPrice": 75,
+      "discountedPrice": 57,
+      "img": {
+        "src": "/images/products/shoes.png",
+        "alt": "Great shoes"
+      },
+      "set": "new-arrival"
+    },
+    {
+      "id": 7,
+      "name": "Perfume",
+      "code": "Y523201",
+      "originalPrice": 29,
+      "discountedPrice": 19,
+      "img": {
+        "src": "/images/products/perfume.png",
+        "alt": "Great perfume"
+      },
+      "set": "new-arrival"
+    },
+    {
+      "id": 8,
+      "name": "Present box",
+      "code": "Y523201",
+      "originalPrice": 29,
+      "discountedPrice": 12,
+      "img": {
+        "src": "/images/products/present-box.png",
+        "alt": "Great present box"
+      },
+      "set": "new-arrival"
+    },
+    {
+      "id": 9,
+      "name": "Watches",
+      "code": "Y523201",
+      "originalPrice": 76,
+      "discountedPrice": 67,
+      "img": {
+        "src": "/images/products/smart-watches.png",
+        "alt": "Great smart watch"
+      },
+      "set": "new-arrival"
+    },
+    {
+      "id": 10,
+      "name": "Ring",
+      "code": "Y523201",
+      "originalPrice": 65,
+      "discountedPrice": 56,
+      "img": {
+        "src": "/images/products/ring.png",
+        "alt": "Great ring"
+      },
+      "set": "new-arrival"
+    },
+    {
+      "id": 11,
+      "name": "Laptop2",
+      "code": "Y523201",
+      "originalPrice": 3500,
+      "img": {
+        "src": "/images/products/laptop.png",
+        "alt": "Great watch"
+      },
+      "set": "best-seller"
+    },
+    {
+      "id": 12,
+      "name": "Black watches2",
+      "code": "Y523201",
+      "originalPrice": 62,
+      "img": {
+        "src": "/images/products/black-watches.png",
+        "alt": "Great watch"
+      },
+      "set": "best-seller"
+    },
+    {
+      "id": 13,
+      "name": "Black watches3",
+      "code": "Y523201",
+      "originalPrice": 62,
+      "img": {
+        "src": "/images/products/black-watches.png",
+        "alt": "Great watch"
+      },
+      "set": "best-seller"
+    },
+    {
+      "id": 14,
+      "name": "Laptop3",
+      "code": "Y523201",
+      "originalPrice": 3500,
+      "img": {
+        "src": "/images/products/laptop.png",
+        "alt": "Great watch"
+      },
+      "set": "best-seller"
+    },
+    {
+      "id": 15,
+      "name": "Black watches4",
+      "code": "Y523201",
+      "originalPrice": 62,
+      "img": {
+        "src": "/images/products/black-watches.png",
+        "alt": "Great watch"
+      },
+      "set": "best-seller"
+    },
+    {
+      "id": 16,
+      "name": "Black watches5",
+      "code": "Y523201",
+      "originalPrice": 62,
+      "img": {
+        "src": "/images/products/black-watches.png",
+        "alt": "Great watch"
+      },
+      "set": "best-seller"
+    },
+    {
+      "id": 17,
+      "name": "Game console2",
+      "code": "Y523201",
+      "originalPrice": 89,
+      "discountedPrice": 76,
+      "img": {
+        "src": "/images/products/game-console.png",
+        "alt": "Great game console"
+      },
+      "set": "featured"
+    },
+    {
+      "id": 18,
+      "name": "Shoes2",
+      "code": "Y523201",
+      "originalPrice": 75,
+      "discountedPrice": 57,
+      "img": {
+        "src": "/images/products/shoes.png",
+        "alt": "Great shoes"
+      },
+      "set": "featured"
+    },
+    {
+      "id": 19,
+      "name": "Perfume2",
+      "code": "Y523201",
+      "originalPrice": 29,
+      "discountedPrice": 19,
+      "img": {
+        "src": "/images/products/perfume.png",
+        "alt": "Great perfume"
+      },
+      "set": "featured"
+    },
+    {
+      "id": 20,
+      "name": "Present box2",
+      "code": "Y523201",
+      "originalPrice": 29,
+      "discountedPrice": 12,
+      "img": {
+        "src": "/images/products/present-box.png",
+        "alt": "Great present box"
+      },
+      "set": "featured"
+    },
+    {
+      "id": 21,
+      "name": "Watches2",
+      "code": "Y523201",
+      "originalPrice": 76,
+      "discountedPrice": 67,
+      "img": {
+        "src": "/images/products/smart-watches.png",
+        "alt": "Great smart watch"
+      },
+      "set": "featured"
+    },
+    {
+      "id": 22,
+      "name": "Ring2",
+      "code": "Y523201",
+      "originalPrice": 65,
+      "discountedPrice": 56,
+      "img": {
+        "src": "/images/products/ring.png",
+        "alt": "Great ring"
+      },
+      "set": "featured"
+    },
+    {
+      "id": 23,
+      "name": "Present box2",
+      "code": "Y523201",
+      "originalPrice": 29,
+      "discountedPrice": 12,
+      "img": {
+        "src": "/images/products/present-box.png",
+        "alt": "Great present box"
+      },
+      "set": "special-offer"
+    },
+    {
+      "id": 24,
+      "name": "Watches2",
+      "code": "Y523201",
+      "originalPrice": 76,
+      "discountedPrice": 67,
+      "img": {
+        "src": "/images/products/smart-watches.png",
+        "alt": "Great smart watch"
+      },
+      "set": "special-offer"
+    },
+    {
+      "id": 25,
+      "name": "Ring2",
+      "code": "Y523201",
+      "originalPrice": 65,
+      "discountedPrice": 56,
+      "img": {
+        "src": "/images/products/ring.png",
+        "alt": "Great ring"
+      },
+      "set": "special-offer"
+    }
+  ]
+}
