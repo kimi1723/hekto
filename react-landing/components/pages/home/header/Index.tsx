@@ -5,15 +5,16 @@ import { motion } from "framer-motion";
 
 import useCarousel from "@/helpers/hooks/useCarousel";
 
-import Section from "@/components/shared/section/Index";
-import Carousel from "@/components/shared/carousel/Index";
-import Label from "@/components/shared/typography/Label";
-import Heading from "@/components/shared/typography/Heading";
-import ButtonLink from "@/components/shared/button-link/Index";
+import Section from "@/components/shared/Section/Index";
+import Carousel from "@/components/shared/Carousel/Index";
+import Label from "@/components/shared/Typography/Label";
+import Heading from "@/components/shared/Typography/Heading";
+import ButtonLink from "@/components/shared/ButtonLink/Index";
 
-import { fetchHomePage } from "@/server/utils/fetch-data";
-import { type PagesData } from "@/server/utils/data-types";
+import { fetchHomePage } from "@/server/helpers/utils/fetch-data/fetch-page";
+import { HOME_HEADER_VIEWS_KEY } from "@/helpers/constants/query-keys";
 import { MAIN_NAV_PAGES } from "@/helpers/constants/pages";
+import { type PagesData } from "@/server/helpers/types/data-types";
 
 import lampImg from "@/assets/home/lamp.png";
 import discountImg from "@/assets/home/discount.png";
@@ -27,13 +28,13 @@ const Header = () => {
     controlsArr,
     handleViewChange,
   } = useCarousel({
-    queryKey: [`home-header-views`],
+    queryKey: [HOME_HEADER_VIEWS_KEY],
     queryFn: () => fetchHomePage("headerViews"),
     handleDisplayData,
   });
 
-  const carouselControls = controlsArr.map((i) => (
-    <li key={i}>
+  const carouselControls = (controlsArr as number[]).map((i) => (
+    <li key={`header-control-${i}`}>
       <button
         onClick={() => handleViewChange(i)}
         aria-label={`Switch to view number ${i + 1}`}

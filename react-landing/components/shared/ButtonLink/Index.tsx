@@ -1,24 +1,22 @@
-import { type ButtonHTMLAttributes } from "react";
+import { type ReactNode } from "react";
+import Link, { type LinkProps } from "next/link";
 
 import Subtitle from "@/components/shared/Typography/Subtitle";
 
 import { type SubtitlesProps } from "@/helpers/constants/subtitles";
 import {
-  buttonSizes,
   buttonColors,
+  buttonSizes,
   type ButtonStyles,
-  type ButtonColorsProps,
 } from "@/helpers/constants/button-styles";
 
-interface ButtonProps
-  extends ButtonHTMLAttributes<HTMLButtonElement>,
-    SubtitlesProps,
-    ButtonStyles {
+interface ButtonLinkProps extends LinkProps, SubtitlesProps, ButtonStyles {
+  children: ReactNode;
+  className?: string;
   icon?: boolean;
-  color?: ButtonColorsProps;
 }
 
-const Button = ({
+const ButtonLink = ({
   children,
   variant = "quaternary",
   className = "",
@@ -26,7 +24,7 @@ const Button = ({
   size = "default",
   color = "primary",
   ...props
-}: ButtonProps) => {
+}: ButtonLinkProps) => {
   const classes = `${
     icon ? "py-1.5 px-3.5" : buttonSizes[size]
   } font-josefin text-white rounded-lg focus:outline-none active:scale-95 active:transform-x-0.5 transition-all ${
@@ -34,7 +32,7 @@ const Button = ({
   } ${className}`;
 
   return (
-    <button className={classes} {...props}>
+    <Link className={classes} {...props}>
       {icon ? (
         children
       ) : (
@@ -42,8 +40,8 @@ const Button = ({
           {children}
         </Subtitle>
       )}
-    </button>
+    </Link>
   );
 };
 
-export default Button;
+export default ButtonLink;

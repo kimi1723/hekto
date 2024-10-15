@@ -1,20 +1,18 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
-import Card from "@/components/shared/Card/Index";
-import ProductButtonMenu from "@/components/shared/ProductButtonMenu/Index";
-import MotionButtonLink from "@/components/shared/MotionButtonLink/Index";
-import Label from "@/components/shared/Typography/Label";
+import ProductButtonMenu from "../../ProductButtonMenu/Index";
+import Label from "../../Typography/Label";
 
 import { type DisplayedProductProps } from "@/helpers/types/product";
 
-const ShadowedProduct = ({
+const SimpleProduct = ({
   motionId,
   name,
   originalPrice,
   href,
   img: { alt, src, width, height },
-  code,
   discountedPrice,
   className,
   isActive,
@@ -27,9 +25,8 @@ const ShadowedProduct = ({
   const price = originalPrice.toFixed(2);
 
   return (
-    <Card
-      el="article"
-      className={`relative text-center hover:-translate-y-6 focus-within:-translate-y-6 duration-500 ${className}`}
+    <article
+      className={`relative ${className}`}
       tabIndex={0}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
@@ -38,7 +35,7 @@ const ShadowedProduct = ({
     >
       <motion.div
         layoutId={motionId}
-        className="relative"
+        className="relative mb-[12px]"
         style={{ height: `${height}px`, width: `${width}px` }}
       >
         <Image alt={alt} src={src} fill />
@@ -47,29 +44,15 @@ const ShadowedProduct = ({
       <ProductButtonMenu
         isActive={isActive}
         name={name}
-        className="absolute top-2 left-2"
+        className="absolute bottom-10 left-2 flex-col"
         {...buttonMenuProps}
         {...{ handleMouseEnter, handleMouseLeave, handleFocus, handleBlur }}
       />
 
-      <div className="relative flex flex-col gap-2 py-6">
-        <MotionButtonLink
-          isActive={isActive}
-          href={href}
-          className="-top-[5px] min-h-[38px]"
-        >
-          View details
-        </MotionButtonLink>
-
-        <Label variant="bold" el="h3" className="text-primary">
-          {name}
-        </Label>
-
-        {code && (
-          <Label variant="sm" el="p" className="mt-4 text-grey-3">
-            Code - {code}
-          </Label>
-        )}
+      <div className="flex justify-between">
+        <Link href={href}>
+          <Label el="span">{name}</Label>
+        </Link>
 
         {!discountedPrice && (
           <Label variant="bold" el="p">
@@ -78,16 +61,16 @@ const ShadowedProduct = ({
         )}
 
         {discountedPrice && (
-          <p className="flex gap-[15px] justify-center items-center">
+          <p className="flex gap-4 justify-center items-center">
             <Label el="span">${discountedPrice.toFixed(2)}</Label>
-            <Label variant="sm" el="span" className="line-through text-grey-3">
+            <Label variant="sm" el="span" className="text-primary">
               ${price}
             </Label>
           </p>
         )}
       </div>
-    </Card>
+    </article>
   );
 };
 
-export default ShadowedProduct;
+export default SimpleProduct;

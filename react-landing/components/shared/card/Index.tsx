@@ -6,15 +6,15 @@ const Card = ({
   el = "div",
   ...props
 }: ChildrenComponentProps) => {
-  const El = el;
+  const CardEl = el;
 
   return (
-    <El
+    <CardEl
       className={`rounded-lg shadow-md hocus:shadow-lg focus:outline-none transition-all ${className}`}
       {...props}
     >
       {children}
-    </El>
+    </CardEl>
   );
 };
 

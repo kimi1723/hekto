@@ -11,3 +11,5 @@ const QueryProvider = ({ children }: { children: ReactNode }) => (
 );
 
 export default QueryProvider;
+
+//TODO: check if queryclient is actually running on both client instances, although first need to fix writing files on vercel prod build

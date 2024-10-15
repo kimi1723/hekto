@@ -4,15 +4,17 @@ import { useState, type ReactNode } from "react";
 interface UseCarouselProps<T> {
   queryKey: string[];
   queryFn: () => Promise<T[]>;
-  dataPerView?: number;
   handleDisplayData: (data: T[]) => ReactNode;
+  dataPerView?: number;
+  customFilter?: keyof T;
 }
 
 const useCarousel = <T>({
   queryKey,
   queryFn,
-  dataPerView = 1,
   handleDisplayData,
+  dataPerView = 1,
+  customFilter,
 }: UseCarouselProps<T>) => {
   const { data, isPending, isError, error } = useQuery({
     queryKey,
@@ -24,7 +26,13 @@ const useCarousel = <T>({
   const startIndex = view * dataPerView;
   const dataToDisplay = data?.slice(startIndex, startIndex + dataPerView) || [];
   const views = Math.ceil((data?.length || 0) / dataPerView);
-  const controlsArr = Array.from({ length: views }, (_, i) => i);
+  const uniqueControlValues =
+    customFilter && data
+      ? Array.from(new Set(data.map((item) => item[customFilter])))
+      : [];
+  const controlsArr = Array.from({ length: views }, (_, i) =>
+    customFilter ? uniqueControlValues[i] : i
+  );
 
   const handleViewChange = (nextView: number) => {
     setDirection(nextView > view ? 1 : -1);

@@ -1,76 +1,86 @@
-import { useQuery } from "@tanstack/react-query";
+import { queryClient } from "@/providers/queryProvider";
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
-import { queryClient } from "@/providers/queryProvider";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-import useCartMutation from "@/helpers/hooks/useCartMutation";
-import useFavoriteMutation from "@/helpers/hooks/useFavoriteMutation";
+import useUserQuery from "@/helpers/queries/User/useUserQuery";
+import useCartMutation from "@/helpers/queries/Cart/useCartMutation";
+import useFavoriteMutation from "@/helpers/queries/Favorites/useFavoritesMutation";
 
-import Modal from "../modal/Index";
+import Modal from "../Modal/Index";
 import ShadowedProduct from "./components/ShadowedProduct";
+import SimpleProduct from "./components/SimpleProduct";
 
-import { fetchUserData } from "@/server/utils/fetch-data";
-import { CART_KEY, FAVORITES_KEY } from "@/helpers/constants/query-keys";
+import { FAVORITES_KEY, CART_KEY } from "@/helpers/constants/query-keys";
 import type ProductProps from "@/helpers/types/product";
-import { type User } from "@/server/utils/data-types";
 
 const Product = ({
-  type = "shadowed",
   id,
+  motionId,
   img: { src, alt, height, width },
+  type = "shadowed",
   ...props
 }: ProductProps) => {
-  const { data } = useQuery({
-    queryKey: [FAVORITES_KEY, CART_KEY],
-    queryFn: () => fetchUserData("all"),
-  });
+  const { data, isPending, isError, error } = useUserQuery();
+  const [isZoomed, setIsZoomed] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
+  const [isFocused, setIsFocused] = useState(false);
   const [isFavorite, setIsFavorite] = useState(false);
   const [isInCart, setIsInCart] = useState(false);
   const [isInitialInCart, setIsInitialInCart] = useState(true);
-  const [isZoomed, setIsZoomed] = useState(false);
 
   const cartMutation = useCartMutation({
     id,
     isInCart,
     setIsInCart,
-    ...props,
     img: { src, alt },
+    ...props,
   });
   const favMutation = useFavoriteMutation({
     id,
     isFavorite,
     setIsFavorite,
-    ...props,
     img: { src, alt },
+    ...props,
   });
 
-  const userData = data as User;
-
   useEffect(() => {
-    if (!userData) return;
+    if (!data) return;
 
-    const favorites = userData.favorites || [];
-    const cart = userData.cart || [];
-
+    const favorites = data.favorites;
+    const cart = data.cart;
     queryClient.setQueryData([FAVORITES_KEY], favorites);
     queryClient.setQueryData([CART_KEY], cart);
 
-    const isFavorite = favorites.some((item) => item.id === id);
-    const isAlreadyInCart = cart.some((item) => item.id === id);
+    const isFavorite = favorites.some((product) => product.id === id);
+    const isAlreadyInCart = cart.some((product) => product.id === id);
 
     setIsFavorite(isFavorite);
     setIsInCart(isAlreadyInCart);
 
     if (isAlreadyInCart) setIsInitialInCart(false);
-  }, [id, userData]);
+  }, [id, data]);
+
+  if (isPending) return <p>Loading {props.name}....</p>;
+
+  if (isError) return <p>An error occured! {error.message}</p>;
+
+  const isActive = isHovered || isFocused;
+
+  const handleMouseEnter = () => setIsHovered(true);
+
+  const handleMouseLeave = () => setIsHovered(false);
+
+  const handleFocus = () => setIsFocused(true);
+
+  const handleBlur = () => setIsFocused(false);
 
   const handleAddToCart = () => cartMutation.mutate();
 
   const handleToggleFavorite = () => favMutation.mutate();
 
-  const handleToggleZoom = () => setIsZoomed(true);
+  const handleZoom = () => setIsZoomed(true);
 
   const handleCloseZoom = () => setIsZoomed(false);
 
@@ -80,6 +90,9 @@ const Product = ({
   let ProductEl;
 
   switch (type) {
+    case "simple":
+      ProductEl = SimpleProduct;
+      break;
     default:
       ProductEl = ShadowedProduct;
   }
@@ -88,16 +101,21 @@ const Product = ({
     <>
       <ProductEl
         href={`products/${id}`}
-        id={id}
+        motionId={motionId}
         img={{ src, alt, height, width }}
         {...props}
         {...{
+          isActive,
           isFavorite,
           isInCart,
           isInitialInCart,
+          handleMouseEnter,
+          handleMouseLeave,
+          handleFocus,
+          handleBlur,
           handleAddToCart,
           handleToggleFavorite,
-          handleToggleZoom,
+          handleZoom,
         }}
       />
       {createPortal(
@@ -107,7 +125,7 @@ const Product = ({
           className="bg-[transparent]"
         >
           <motion.div
-            layoutId={id.toString()}
+            layoutId={motionId}
             transition={{ duration: 0.75, type: "spring", bounce: 0 }}
           >
             <Image alt={alt} src={src} width={width * 2} height={height * 2} />
