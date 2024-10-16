@@ -8,7 +8,7 @@ import { type FileNames } from "../types/data-types";
 import { FILES_MAP, type UsersData } from "../types/data-types";
 
 export const readWriteFile = async <T>(fileName: FileNames) => {
-  const filePath = path.join(process.cwd(), "tmp", "data", fileName);
+  const filePath = path.join('/tmp', "data", fileName);
 
   const readFile = async (): Promise<T> =>
     JSON.parse(await fs.readFile(filePath, "utf-8"));
