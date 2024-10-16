@@ -8,7 +8,7 @@ import Product from "@/components/shared/Product/Index";
 import Carousel from "@/components/shared/Carousel/Index";
 
 import fetchProducts from "@/server/helpers/utils/fetch-data/fetch-products";
-import { PRODUCTS_KEY, FEATURED_KEY } from "@/helpers/constants/query-keys";
+import { Products } from "@/helpers/constants/query-keys";
 import { type Product as ProductType } from "@/server/helpers/types/data-types";
 
 const PRODUCTS_PER_PAGE = 4;
@@ -17,8 +17,8 @@ const HEADER_ID = "featured-products-carousel-heading";
 
 const FeaturedProducts = () => {
   const { props, view, controlsArr, handleViewChange } = useCarousel({
-    queryKey: [PRODUCTS_KEY, FEATURED_KEY],
-    queryFn: () => fetchProducts(FEATURED_KEY),
+    queryKey: [Products.Featured],
+    queryFn: () => fetchProducts(Products.Featured),
     dataPerView: PRODUCTS_PER_PAGE,
     handleDisplayData: handleDisplayProducts,
   });

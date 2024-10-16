@@ -12,7 +12,7 @@ import Heading from "@/components/shared/Typography/Heading";
 import ButtonLink from "@/components/shared/ButtonLink/Index";
 
 import { fetchHomePage } from "@/server/helpers/utils/fetch-data/fetch-page";
-import { HOME_HEADER_VIEWS_KEY } from "@/helpers/constants/query-keys";
+import { Home } from "@/helpers/constants/query-keys";
 import { MAIN_NAV_PAGES } from "@/helpers/constants/pages";
 import { type PagesData } from "@/server/helpers/types/data-types";
 
@@ -28,13 +28,13 @@ const Header = () => {
     controlsArr,
     handleViewChange,
   } = useCarousel({
-    queryKey: [HOME_HEADER_VIEWS_KEY],
+    queryKey: [Home.HeaderViews],
     queryFn: () => fetchHomePage("headerViews"),
     handleDisplayData,
   });
 
   const carouselControls = (controlsArr as number[]).map((i) => (
-    <li key={`header-control-${i}`}>
+    <li key={i}>
       <button
         onClick={() => handleViewChange(i)}
         aria-label={`Switch to view number ${i + 1}`}

@@ -3,7 +3,7 @@ import { queryClient } from "@/providers/queryProvider";
 import { type Dispatch, type SetStateAction } from "react";
 
 import sendData from "@/server/helpers/utils/send-data";
-import { CART_KEY, USER_KEYS } from "@/helpers/constants/query-keys";
+import { User } from "@/helpers/constants/query-keys";
 
 import { type Product } from "@/server/helpers/types/data-types";
 
@@ -19,11 +19,11 @@ const useCartMutation = ({
   ...props
 }: UseCartMutationProps) =>
   useMutation({
-    mutationFn: () => sendData(CART_KEY, id),
+    mutationFn: () => sendData(User.Cart, id),
     onMutate: () => {
       setIsInCart(true);
 
-      const prevCart = queryClient.getQueryData<Product[]>([CART_KEY]) || [];
+      const prevCart = queryClient.getQueryData<Product[]>([User.Cart]) || [];
       const prevItemIndex = prevCart.findIndex((item) => item.id === id);
       const updatedCart = [...prevCart];
 
@@ -40,17 +40,17 @@ const useCartMutation = ({
         updatedCart[prevItemIndex] = updatedItem;
       }
 
-      queryClient.setQueryData([CART_KEY], updatedCart);
+      queryClient.setQueryData([User.Cart], updatedCart);
 
       return { prevIsInCart: isInCart, prevCart };
     },
     onError: (_, __, ctx) => {
       if (ctx?.prevIsInCart) setIsInCart(ctx.prevIsInCart);
 
-      if (ctx?.prevCart) queryClient.setQueryData([CART_KEY], ctx.prevCart);
+      if (ctx?.prevCart) queryClient.setQueryData([User.Cart], ctx.prevCart);
     },
     onSettled: () => {
-      queryClient.invalidateQueries({ queryKey: USER_KEYS });
+      queryClient.invalidateQueries({ queryKey: User.All });
     },
   });
 

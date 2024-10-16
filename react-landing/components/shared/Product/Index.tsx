@@ -12,7 +12,7 @@ import Modal from "../Modal/Index";
 import ShadowedProduct from "./components/ShadowedProduct";
 import SimpleProduct from "./components/SimpleProduct";
 
-import { FAVORITES_KEY, CART_KEY } from "@/helpers/constants/query-keys";
+import { User } from "@/helpers/constants/query-keys";
 import type ProductProps from "@/helpers/types/product";
 
 const Product = ({
@@ -50,8 +50,9 @@ const Product = ({
 
     const favorites = data.favorites;
     const cart = data.cart;
-    queryClient.setQueryData([FAVORITES_KEY], favorites);
-    queryClient.setQueryData([CART_KEY], cart);
+
+    queryClient.setQueryData([User.Favorites], favorites);
+    queryClient.setQueryData([User.Cart], cart);
 
     const isFavorite = favorites.some((product) => product.id === id);
     const isAlreadyInCart = cart.some((product) => product.id === id);
@@ -59,7 +60,7 @@ const Product = ({
     setIsFavorite(isFavorite);
     setIsInCart(isAlreadyInCart);
 
-    if (isAlreadyInCart) setIsInitialInCart(false);
+    if (isAlreadyInCart) setTimeout(() => setIsInitialInCart(false), 1200);
   }, [id, data]);
 
   if (isPending) return <p>Loading {props.name}....</p>;
@@ -83,9 +84,6 @@ const Product = ({
   const handleZoom = () => setIsZoomed(true);
 
   const handleCloseZoom = () => setIsZoomed(false);
-
-  if (isInCart && isInitialInCart)
-    setTimeout(() => setIsInitialInCart(false), 1200);
 
   let ProductEl;
 

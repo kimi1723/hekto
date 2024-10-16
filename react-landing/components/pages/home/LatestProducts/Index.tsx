@@ -9,7 +9,7 @@ import Carousel from "@/components/shared/Carousel/Index";
 
 import fetchProducts from "@/server/helpers/utils/fetch-data/fetch-products";
 import { kebabToCamelCase } from "@/helpers/utils/utils";
-import { LATEST_KEY, PRODUCTS_KEY } from "@/helpers/constants/query-keys";
+import { Products } from "@/helpers/constants/query-keys";
 import { type Product as ProductType } from "@/server/helpers/types/data-types";
 
 const PRODUCT_PER_PAGE = 6;
@@ -18,8 +18,8 @@ const HEADER_ID = "latest-products-carousel-heading";
 
 const LatestProducts = () => {
   const { props, view, controlsArr, handleViewChange } = useCarousel({
-    queryKey: [PRODUCTS_KEY, LATEST_KEY],
-    queryFn: () => fetchProducts(LATEST_KEY),
+    queryKey: [Products.Latest],
+    queryFn: () => fetchProducts(Products.Latest),
     dataPerView: PRODUCT_PER_PAGE,
     handleDisplayData: handleDisplayProducts,
     customFilter: "set",

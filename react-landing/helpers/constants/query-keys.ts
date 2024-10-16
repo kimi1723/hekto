@@ -1,33 +1,27 @@
-const PRODUCT_QUERY_KEYS = {
-  products: "products",
-  featured: "featured",
-  latest: "latest",
-} as const;
+enum PRODUCT_QUERY_KEYS {
+  All = "products",
+  Featured = "featured",
+  Latest = "latest",
+}
 
-const USER_QUERY_KEYS = {
-  favorites: "favorites",
-  cart: "cart",
-} as const;
+enum USER_QUERY_KEYS {
+  Favorites = "favorites",
+  Cart = "cart",
+}
 
-const PAGES_QUERY_KEYS = {
-  home: {
-    headerViews: "home-header-views",
+enum PAGES_QUERY_KEYS {
+  HomeHeaderViews = "home-header-views",
+}
+
+const QUERY_KEYS = {
+  Products: { ...PRODUCT_QUERY_KEYS },
+  Home: {
+    HeaderViews: PAGES_QUERY_KEYS.HomeHeaderViews,
+  },
+  User: {
+    ...USER_QUERY_KEYS,
+    All: [USER_QUERY_KEYS.Favorites, USER_QUERY_KEYS.Cart],
   },
 } as const;
 
-const QUERY_KEYS = {
-  ...PRODUCT_QUERY_KEYS,
-  ...USER_QUERY_KEYS,
-  ...PAGES_QUERY_KEYS,
-  user: [USER_QUERY_KEYS.favorites, USER_QUERY_KEYS.cart],
-} as const;
-
-export const {
-  products: PRODUCTS_KEY,
-  featured: FEATURED_KEY,
-  latest: LATEST_KEY,
-  favorites: FAVORITES_KEY,
-  cart: CART_KEY,
-  user: USER_KEYS,
-  home: { headerViews: HOME_HEADER_VIEWS_KEY },
-} = QUERY_KEYS;
+export const { Products, Home, User } = QUERY_KEYS;

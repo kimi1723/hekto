@@ -3,7 +3,7 @@ import { queryClient } from "@/providers/queryProvider";
 import { type Dispatch, type SetStateAction } from "react";
 
 import sendData from "@/server/helpers/utils/send-data";
-import { FAVORITES_KEY, USER_KEYS } from "@/helpers/constants/query-keys";
+import { User } from "@/helpers/constants/query-keys";
 
 import { type Product } from "@/server/helpers/types/data-types";
 
@@ -19,11 +19,10 @@ const useFavoriteMutation = ({
   ...props
 }: UseFavoriteMutationProps) =>
   useMutation({
-    mutationFn: () => sendData(FAVORITES_KEY, id),
+    mutationFn: () => sendData(User.Favorites, id),
     onMutate: () => {
       const prevFavorites =
-        queryClient.getQueryData<Product[]>([FAVORITES_KEY]) || [];
-
+        queryClient.getQueryData<Product[]>([User.Favorites]) || [];
       const prevFavoriteIndex = prevFavorites.findIndex(
         (item) => item.id === id
       );
@@ -37,7 +36,7 @@ const useFavoriteMutation = ({
         setIsFavorite(false);
       }
 
-      queryClient.setQueryData([FAVORITES_KEY], updatedFavorites);
+      queryClient.setQueryData([User.Favorites], updatedFavorites);
 
       return { prevIsFavorite: isFavorite, prevFavorites };
     },
@@ -45,10 +44,10 @@ const useFavoriteMutation = ({
       if (ctx?.prevIsFavorite) setIsFavorite(ctx.prevIsFavorite);
 
       if (ctx?.prevFavorites)
-        queryClient.setQueryData([FAVORITES_KEY], ctx.prevFavorites);
+        queryClient.setQueryData([User.Favorites], ctx.prevFavorites);
     },
     onSettled: () => {
-      queryClient.invalidateQueries({ queryKey: USER_KEYS });
+      queryClient.invalidateQueries({ queryKey: User.All });
     },
   });
 
