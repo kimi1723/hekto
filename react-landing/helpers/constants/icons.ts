@@ -10,6 +10,13 @@ const ICON_IDS = {
   zoom: "zoom",
   check: "check",
   plus: "plus",
+  pen: "pen",
+  calendar: "calendar",
+  facebook: "fb",
+  twitter: "tw",
+  instagram: "ig",
+  star: "star",
+  activeStar: "star-active",
 } as const;
 
 export const {
@@ -24,7 +31,16 @@ export const {
   zoom,
   check,
   plus,
+  pen,
+  calendar,
+  facebook,
+  twitter,
+  instagram,
+  star,
+  activeStar,
 } = ICON_IDS;
+
+export const SOCIALS = [facebook, twitter, instagram];
 
 export type IconValues = (typeof ICON_IDS)[keyof typeof ICON_IDS];
 

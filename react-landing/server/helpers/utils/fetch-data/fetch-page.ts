@@ -1,16 +1,18 @@
 "use server";
 
-import fetch from "./fetch-data";
+import {
+  PagesData,
+  type HomeViews,
+  type PagesVariants,
+} from "../../types/data-types";
+import fetchData from "./fetch-data";
 
-import { type HomeViews, type PagesVariants } from "../../types/data-types";
-
-const fetchPage = async (variant: PagesVariants) => {
+const fetchPage = async <T extends PagesVariants>(
+  variant: T
+): Promise<PagesData[T]> => {
   try {
-    const data = await fetch("pages");
+    const data = await fetchData("pages");
     const filteredData = data[variant];
-
-    if (!filteredData)
-      throw new Error(`Product's data variant: "${variant}" not found.`);
 
     return filteredData;
   } catch (error) {
@@ -23,7 +25,9 @@ const fetchPage = async (variant: PagesVariants) => {
   }
 };
 
-export const fetchHomePage = async (view: HomeViews) => {
+export const fetchHomePage = async <T extends HomeViews>(
+  view: T
+): Promise<PagesData["home"][T]> => {
   const homeData = await fetchPage("home");
 
   return homeData[view];

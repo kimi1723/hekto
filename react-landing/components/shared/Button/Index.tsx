@@ -10,7 +10,7 @@ import {
   type ButtonColorsProps,
 } from "@/helpers/constants/button-styles";
 
-interface ButtonProps
+export interface ButtonProps
   extends ButtonHTMLAttributes<HTMLButtonElement>,
     SubtitlesProps,
     ButtonStyles {

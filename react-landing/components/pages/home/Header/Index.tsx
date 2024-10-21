@@ -80,8 +80,12 @@ const Header = () => {
           initialDuration={1.5}
           initialSlideIn={100}
           className="relative flex items-center gap-14 z-0"
-          {...props}
-          {...{ displayedData, handleDisplayError, handleDisplayPending }}
+          {...{
+            ...props,
+            displayedData,
+            handleDisplayError,
+            handleDisplayPending,
+          }}
         />
 
         {displayedData && (
@@ -103,8 +107,8 @@ const dotMenuVariants = {
   transition: { duration: 3, type: "spring", bounce: 0 },
 };
 
-const handleDisplayData = (view: PagesData["home"]["headerViews"]) => {
-  if (!view[0]) return;
+const handleDisplayData = (views: PagesData["home"]["headerViews"]) => {
+  if (!views[0]) return;
 
   const {
     label,
@@ -112,7 +116,7 @@ const handleDisplayData = (view: PagesData["home"]["headerViews"]) => {
     description,
     img: { alt, ...rest },
     discount,
-  } = view[0];
+  } = views[0];
 
   return (
     <>
@@ -158,4 +162,5 @@ const handleDisplayPending = () => (
     Loading header...
   </p>
 );
+
 export default Header;

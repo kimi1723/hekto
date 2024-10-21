@@ -7,12 +7,27 @@ interface ProductProps extends Omit<LinkProps, "href"> {
   name: string;
   originalPrice: number;
   img: { src: string; alt: string; height: number; width: number };
-  discountedPrice?: number;
   quantity: number;
+  imgViews: {
+    src: string;
+    alt: string;
+  }[];
+  rating: number;
+  description: {
+    title: string;
+    short: string;
+    long: string;
+  };
+  details: string[];
+  detailedProductViews?: string[];
+  discountedPrice?: number;
   code?: string;
   className?: string;
   href?: Url;
   type?: "shadowed" | "simple";
+  total: number;
+  buttonMenu?: boolean;
+  viewDetailsButton?: boolean;
 }
 
 export interface ButtonMenuProps {

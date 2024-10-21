@@ -1,6 +1,7 @@
 "use server";
 
-import { readWriteFile } from "../utils";
+import { API_URL } from "./../../constants/constants";
+
 import {
   FILES_MAP,
   type PagesData,
@@ -13,19 +14,28 @@ type FetchDataReturnType = {
   users: UsersData;
   pages: PagesData;
 };
+interface FetchConfig extends RequestInit {
+  method?: "GET" | "POST" | "PUT" | "DELETE" | "PATCH";
+  headers?: Record<string, string>;
+  body?: string;
+}
 
 const fetchData = async <K extends keyof typeof FILES_MAP>(
-  key: K
+  key: K,
+  config: FetchConfig = {
+    headers: {
+      "ngrok-skip-browser-warning": "true",
+    },
+  },
+  additionalPath: string = ""
 ): Promise<FetchDataReturnType[K]> => {
-  const fileName = FILES_MAP[key].path;
-  const [readFile] = await readWriteFile<FetchDataReturnType[K]>(fileName);
-
   try {
-    const fileData = await readFile();
+    const res = await fetch(`${API_URL}/${key}/${additionalPath}`, config);
 
-    if (!fileData) throw new Error(`Error reading file "${fileName}".`);
+    if (!res.ok)
+      throw new Error(`Error occured when receiving the response for ${key}".`);
 
-    return fileData;
+    return res.json();
   } catch (error) {
     if (error instanceof Error) throw error;
 

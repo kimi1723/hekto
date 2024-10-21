@@ -1,17 +1,27 @@
-"use client";
+import {
+  HydrationBoundary,
+  QueryClient,
+  dehydrate,
+} from "@tanstack/react-query";
 
-// import { useQuery } from "@tanstack/react-query";
+import Wishlist from "@/components/pages/wishlist/Index";
 
-// import { fetchFavorites } from "@/server/utils/fetch-data";
-// import { PRODUCTS_KEY, FAVORITES_KEY } from "@/helpers/constants/query-keys";
+import { User } from "@/helpers/constants/query-keys";
+import { fetchFavorites } from "@/server/helpers/utils/fetch-data/fetch-user";
 
-const Wishlist = () => {
-  // const { data, isPending, isError, error } = useQuery({
-  //   queryKey: [PRODUCTS_KEY, FAVORITES_KEY],
-  //   queryFn: () => fetchFavorites(),
-  // });
+const WishlistPage = async () => {
+  const queryClient = new QueryClient();
 
-  return <h1>Wishlist!</h1>;
+  await queryClient.prefetchQuery({
+    queryKey: [User.Favorites],
+    queryFn: () => fetchFavorites(),
+  });
+
+  return (
+    <HydrationBoundary state={dehydrate(queryClient)}>
+      <Wishlist />
+    </HydrationBoundary>
+  );
 };
 
-export default Wishlist;
+export default WishlistPage;

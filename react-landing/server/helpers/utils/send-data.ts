@@ -1,32 +1,34 @@
 "use server";
 
 import { cookies } from "next/headers";
+import fetch from "./fetch-data/fetch-data";
 
-import {
-  FILES_MAP,
-  type Product,
-  type UsersData,
-  type UsersVariants,
-} from "../types/data-types";
+import { type Product, type UsersVariants } from "../types/data-types";
 
 import fetchProducts from "./fetch-data/fetch-products";
-import { readWriteFile } from "./utils";
+import { calcIndividualTotal } from "@/helpers/utils/utils";
 
-const sendData = async (
-  variant: Exclude<UsersVariants, "all">,
-  productId: number
-) => {
+interface SendData {
+  variant: Exclude<UsersVariants, "all">;
+  productId?: number;
+  newValue?: number;
+  clearCart?: boolean;
+}
+
+const sendData = async ({
+  variant,
+  productId,
+  newValue,
+  clearCart,
+}: SendData) => {
   const userId = cookies().get("userId")?.value;
 
   try {
     if (!userId) throw new Error(`Couldn't get your session.`);
 
-    const fileName = FILES_MAP.users.path;
-    const [readUsers, writeUsers] = await readWriteFile<UsersData>(fileName);
+    const users = await fetch("users");
 
-    const users = await readUsers();
-    const userIndex = users.findIndex((user) => user.id === +userId);
-
+    const userIndex = users.findIndex((user) => +user.id === +userId);
     if (userIndex === -1)
       throw new Error(`Failed to update ${variant} for user with id ${userId}`);
 
@@ -35,11 +37,28 @@ const sendData = async (
 
     const user = users[userIndex];
     const variantList = user[variant];
-    const updatedList = handleVariantUpdate(variant, product, [...variantList]);
+    const updatedList = handleVariantUpdate({
+      variant,
+      product,
+      updatedList: [...variantList],
+      newValue,
+      clearCart,
+    });
 
     user[variant] = updatedList;
 
-    await writeUsers(users);
+    await fetch(
+      `users`,
+      {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+          "ngrok-skip-browser-warning": "true",
+        },
+        body: JSON.stringify({ ...user, [variant]: updatedList }),
+      },
+      userId
+    );
 
     return updatedList;
   } catch (error) {
@@ -52,30 +71,60 @@ const sendData = async (
   }
 };
 
-const handleVariantUpdate = (
-  variant: string,
-  product: Product,
-  updatedList: Product[]
-) => {
-  const existingProductIndex = updatedList.findIndex(
-    (p) => p.id === product.id
-  );
+interface handleVariantUpdate {
+  variant: string;
+  product: Product;
+  updatedList: Product[];
+  newValue?: number;
+  clearCart?: boolean;
+}
 
-  if (existingProductIndex === -1) {
-    updatedList.push({ ...product, quantity: 1 });
+const handleVariantUpdate = ({
+  variant,
+  product,
+  updatedList,
+  newValue,
+  clearCart,
+}: handleVariantUpdate) => {
+  const existingProductIndex = updatedList.findIndex(
+    (p) => p.id === product?.id
+  );
+  const productExists = existingProductIndex !== -1;
+  if (variant === "favorites") {
+    if (productExists) updatedList.splice(existingProductIndex, 1);
+
+    if (!productExists) updatedList.push(product);
 
     return updatedList;
   }
 
-  if (variant === "favorites") {
-    updatedList.splice(existingProductIndex, 1);
+  if (clearCart) return [];
+
+  if (!productExists) {
+    const newQuantity = newValue || 1;
+    const newTotal = calcIndividualTotal({ ...product, newQuantity });
+
+    updatedList.push({
+      ...product,
+      quantity: newQuantity,
+      total: newQuantity * newTotal,
+    });
 
     return updatedList;
   }
 
   const existingProduct = updatedList[existingProductIndex];
+  const validValue = newValue === undefined || newValue > 0;
 
-  existingProduct.quantity = existingProduct.quantity + 1 || 0;
+  if (!validValue) updatedList.splice(existingProductIndex, 1);
+
+  if (validValue) {
+    const newQuantity = newValue ? newValue : existingProduct.quantity + 1 || 1;
+    const newTotal = calcIndividualTotal({ ...product, newQuantity });
+
+    existingProduct.quantity = newQuantity;
+    existingProduct.total = newTotal;
+  }
 
   return updatedList;
 };

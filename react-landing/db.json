@@ -1,0 +1,2424 @@
+{
+  "pages": {
+    "home": {
+      "headerViews": [
+        {
+          "label": "Best Headphones For Your Life....",
+          "heading": "New trendy collection headphones",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+          "img": {
+            "src": "/images/home/header/headphones.png",
+            "alt": "Great headphones",
+            "height": 692,
+            "width": 706
+          },
+          "discountImg": {
+            "src": "/images/home/header/discount.png",
+            "alt": "",
+            "height": 138.49,
+            "width": 136.56
+          },
+          "discount": "50%"
+        },
+        {
+          "label": "Best Headphones For Your Life....",
+          "heading": "secondary collection headphones",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+          "img": {
+            "src": "/images/home/header/headphones.png",
+            "alt": "Great headphones",
+            "height": 692,
+            "width": 706
+          }
+        },
+        {
+          "label": "Best Headphones For Your Life....",
+          "heading": "tertiary collection headphones",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+          "img": {
+            "src": "/images/home/header/headphones.png",
+            "alt": "Great headphones",
+            "height": 692,
+            "width": 706
+          }
+        }
+      ],
+      "uniqueProduct": {
+        "id": 14,
+        "title": "Unique Features Of latest & Trending Poducts",
+        "descriptionList": [
+          "All frames constructed with hardwood solids and laminates",
+          "Reinforced with double wood dowels, glue, screw - nails corner",
+          "Arms, backs and seats are structurally reinforced"
+        ]
+      },
+      "discountItems": [
+        {
+          "controlTitle": "Headphones",
+          "primaryTitle": "20% Discount Of All Products",
+          "secondaryTitle": "Headphones Compact",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu eget feugiat habitasse nec, bibendum condimentum.",
+          "features": [
+            "Material expose like metals",
+            "Clear lines and geomatric figures",
+            "Simple neutral colours.",
+            "Material exposes like metals"
+          ],
+          "img": {
+            "src": "/images/home/discount-items/headphones.png",
+            "alt": "great headphones"
+          },
+          "path": "headphones"
+        },
+        {
+          "controlTitle": "Laptops",
+          "primaryTitle": "30% Discount Of All Products",
+          "secondaryTitle": "Laptops Compact",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu eget feugiat habitasse nec, bibendum condimentum.",
+          "features": [
+            "Material expose like metals",
+            "Clear lines and geomatric figures",
+            "Simple neutral colours.",
+            "Material exposes like metals"
+          ],
+          "img": {
+            "src": "/images/home/discount-items/headphones.png",
+            "alt": "great headphones"
+          },
+          "path": "laptop"
+        },
+        {
+          "controlTitle": "Other",
+          "primaryTitle": "40% Discount Of All Products",
+          "secondaryTitle": "Other",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu eget feugiat habitasse nec, bibendum condimentum.",
+          "features": [
+            "Material expose like metals",
+            "Clear lines and geomatric figures",
+            "Simple neutral colours.",
+            "Material exposes like metals"
+          ],
+          "img": {
+            "src": "/images/home/discount-items/headphones.png",
+            "alt": "great headphones"
+          },
+          "path": "other"
+        }
+      ],
+      "topCategories": [
+        {
+          "title": "Perfume",
+          "img": {
+            "src": "/images/home/top-categories/perfume.png",
+            "alt": "great perfumes"
+          },
+          "path": "perfume"
+        },
+        {
+          "title": "Present box",
+          "img": {
+            "src": "/images/home/top-categories/present-box.png",
+            "alt": "great present boxes"
+          },
+          "path": "present-box"
+        },
+        {
+          "title": "Bracelet",
+          "img": {
+            "src": "/images/home/top-categories/bracelet.png",
+            "alt": "great bracelets"
+          },
+          "path": "bracelet"
+        },
+        {
+          "title": "Ring",
+          "img": {
+            "src": "/images/home/top-categories/ring.png",
+            "alt": "great rings"
+          },
+          "path": "ring"
+        },
+        {
+          "title": "Perfume2",
+          "img": {
+            "src": "/images/home/top-categories/perfume.png",
+            "alt": "great perfumes"
+          },
+          "path": "perfume"
+        },
+        {
+          "title": "Present box2",
+          "img": {
+            "src": "/images/home/top-categories/present-box.png",
+            "alt": "great present boxes"
+          },
+          "path": "present-box"
+        },
+        {
+          "title": "Bracelet2",
+          "img": {
+            "src": "/images/home/top-categories/bracelet.png",
+            "alt": "great bracelets"
+          },
+          "path": "bracelet"
+        },
+        {
+          "title": "Ring2",
+          "img": {
+            "src": "/images/home/top-categories/ring.png",
+            "alt": "great rings"
+          },
+          "path": "ring"
+        },
+        {
+          "title": "Perfume3",
+          "img": {
+            "src": "/images/home/top-categories/perfume.png",
+            "alt": "great perfumes"
+          },
+          "path": "perfume"
+        },
+        {
+          "title": "Present box3",
+          "img": {
+            "src": "/images/home/top-categories/present-box.png",
+            "alt": "great present boxes"
+          },
+          "path": "present-box"
+        },
+        {
+          "title": "Bracelet3",
+          "img": {
+            "src": "/images/home/top-categories/bracelet.png",
+            "alt": "great bracelets"
+          },
+          "path": "bracelet"
+        },
+        {
+          "title": "Ring3",
+          "img": {
+            "src": "/images/home/top-categories/ring.png",
+            "alt": "great rings"
+          },
+          "path": "ring"
+        }
+      ],
+      "latestBlog": [
+        {
+          "id": 1,
+          "author": "Jon doe",
+          "timestamp": 1692576000000,
+          "title": "Top essential Trends in 2023",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit hendrerit ex.",
+          "img": {
+            "src": "/images/home/blog/1.png",
+            "alt": "nice room"
+          }
+        },
+        {
+          "id": 2,
+          "author": "Jon doe",
+          "timestamp": 1692576000000,
+          "title": "Top essential Trends in 2023 2",
+          "description": "Nullam nec fringilla erat, ac dapibus nunc. Integer semper ipsum in fermentum aliquam. ",
+          "img": {
+            "src": "/images/home/blog/2.png",
+            "alt": "great sofa in a nice room"
+          }
+        },
+        {
+          "id": 3,
+          "author": "Jon doe",
+          "timestamp": 1692576000000,
+          "title": "Top essential Trends in 2023 3",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit hendrerit ex.",
+          "img": {
+            "src": "/images/home/blog/3.png",
+            "alt": "nice sofa in blue room"
+          }
+        }
+      ]
+    }
+  },
+  "users": [
+    {
+      "id": "1729491953976.1882",
+      "cart": [
+        {
+          "id": 2,
+          "name": "Headphones",
+          "code": "Y523201",
+          "originalPrice": 99,
+          "discountedPrice": 89,
+          "img": {
+            "src": "/images/products/headphones.png",
+            "alt": "Great watch"
+          },
+          "rating": 3,
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tellus porttitor purus, et volutpat sit.",
+          "imgViews": [
+            {
+              "src": "/images/products/headphones.png",
+              "alt": "Great watch"
+            },
+            {
+              "src": "/images/products/headphones-2.png",
+              "alt": "great watch"
+            },
+            {
+              "src": "/images/products/headphones-3.png",
+              "alt": "great watch"
+            }
+          ],
+          "quantity": 3,
+          "total": 267
+        }
+      ],
+      "favorites": []
+    },
+    {
+      "id": "1727999945176.825",
+      "cart": [],
+      "favorites": []
+    },
+    {
+      "id": "1729498969854.8",
+      "cart": [
+        {
+          "id": 3,
+          "name": "Laptop",
+          "code": "Y523201",
+          "originalPrice": 3500,
+          "discountedPrice": 2999,
+          "img": {
+            "src": "/images/products/laptop.png",
+            "alt": "Great watch"
+          },
+          "quantity": 1,
+          "total": 2999
+        },
+        {
+          "id": 2,
+          "name": "Headphones",
+          "code": "Y523201",
+          "originalPrice": 99,
+          "discountedPrice": 89,
+          "img": {
+            "src": "/images/products/headphones.png",
+            "alt": "Great watch"
+          },
+          "rating": 3,
+          "description": {
+            "title": "Varius tempor.",
+            "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tellus porttitor purus, et volutpat sit.",
+            "long": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor. Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam. Integer feugiat odio ut dictum viverra. Donec vehicula nisi placerat cursus mollis. Nunc aliquam tempor justo, ut sagittis nisi. Mauris ullamcorper quis nisl sed dictum. Maecenas quam risus, congue quis accumsan at, imperdiet sed lectus. Aliquam in est purus"
+          },
+          "details": [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur.",
+            "Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante.",
+            "Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor.",
+            "Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam.",
+            "Phasellus quis sodales augue. Integer feugiat odio ut dictum viverra."
+          ],
+          "imgViews": [
+            {
+              "src": "/images/products/headphones.png",
+              "alt": "Great watch"
+            },
+            {
+              "src": "/images/products/headphones-2.png",
+              "alt": "great watch"
+            },
+            {
+              "src": "/images/products/headphones-3.png",
+              "alt": "great watch"
+            }
+          ],
+          "detailedProductViews": [
+            "description",
+            "additional info",
+            "reviews",
+            "video"
+          ],
+          "quantity": 2,
+          "total": 178
+        }
+      ],
+      "favorites": []
+    },
+    {
+      "id": "1729499372237.6045",
+      "cart": [],
+      "favorites": []
+    },
+    {
+      "id": "1729499427474.469",
+      "cart": [],
+      "favorites": []
+    },
+    {
+      "id": "1729499484947.5537",
+      "cart": [],
+      "favorites": []
+    },
+    {
+      "id": "1729502804881.0486",
+      "cart": [],
+      "favorites": [
+        {
+          "id": 2,
+          "name": "Headphones",
+          "code": "Y523201",
+          "originalPrice": 99,
+          "discountedPrice": 89,
+          "img": {
+            "src": "/images/products/headphones.png",
+            "alt": "Great watch"
+          },
+          "rating": 3,
+          "description": {
+            "title": "Varius tempor.",
+            "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tellus porttitor purus, et volutpat sit.",
+            "long": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor. Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam. Integer feugiat odio ut dictum viverra. Donec vehicula nisi placerat cursus mollis. Nunc aliquam tempor justo, ut sagittis nisi. Mauris ullamcorper quis nisl sed dictum. Maecenas quam risus, congue quis accumsan at, imperdiet sed lectus. Aliquam in est purus"
+          },
+          "details": [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur.",
+            "Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante.",
+            "Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor.",
+            "Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam.",
+            "Phasellus quis sodales augue. Integer feugiat odio ut dictum viverra."
+          ],
+          "imgViews": [
+            {
+              "src": "/images/products/headphones.png",
+              "alt": "Great watch"
+            },
+            {
+              "src": "/images/products/headphones-2.png",
+              "alt": "great watch"
+            },
+            {
+              "src": "/images/products/headphones-3.png",
+              "alt": "great watch"
+            }
+          ],
+          "detailedProductViews": [
+            "description",
+            "additional info",
+            "reviews",
+            "video"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1729502928726.5227",
+      "cart": [],
+      "favorites": [
+        {
+          "id": 2,
+          "name": "Headphones",
+          "code": "Y523201",
+          "originalPrice": 99,
+          "discountedPrice": 89,
+          "img": {
+            "src": "/images/products/headphones.png",
+            "alt": "Great watch"
+          },
+          "rating": 3,
+          "description": {
+            "title": "Varius tempor.",
+            "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tellus porttitor purus, et volutpat sit.",
+            "long": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor. Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam. Integer feugiat odio ut dictum viverra. Donec vehicula nisi placerat cursus mollis. Nunc aliquam tempor justo, ut sagittis nisi. Mauris ullamcorper quis nisl sed dictum. Maecenas quam risus, congue quis accumsan at, imperdiet sed lectus. Aliquam in est purus"
+          },
+          "details": [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur.",
+            "Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante.",
+            "Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor.",
+            "Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam.",
+            "Phasellus quis sodales augue. Integer feugiat odio ut dictum viverra."
+          ],
+          "imgViews": [
+            {
+              "src": "/images/products/headphones.png",
+              "alt": "Great watch"
+            },
+            {
+              "src": "/images/products/headphones-2.png",
+              "alt": "great watch"
+            },
+            {
+              "src": "/images/products/headphones-3.png",
+              "alt": "great watch"
+            }
+          ],
+          "detailedProductViews": [
+            "description",
+            "additional info",
+            "reviews",
+            "video"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1729503005924.7747",
+      "cart": [],
+      "favorites": [
+        {
+          "id": 2,
+          "name": "Headphones",
+          "code": "Y523201",
+          "originalPrice": 99,
+          "discountedPrice": 89,
+          "img": {
+            "src": "/images/products/headphones.png",
+            "alt": "Great watch"
+          },
+          "rating": 3,
+          "description": {
+            "title": "Varius tempor.",
+            "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tellus porttitor purus, et volutpat sit.",
+            "long": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor. Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam. Integer feugiat odio ut dictum viverra. Donec vehicula nisi placerat cursus mollis. Nunc aliquam tempor justo, ut sagittis nisi. Mauris ullamcorper quis nisl sed dictum. Maecenas quam risus, congue quis accumsan at, imperdiet sed lectus. Aliquam in est purus"
+          },
+          "details": [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur.",
+            "Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante.",
+            "Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor.",
+            "Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam.",
+            "Phasellus quis sodales augue. Integer feugiat odio ut dictum viverra."
+          ],
+          "imgViews": [
+            {
+              "src": "/images/products/headphones.png",
+              "alt": "Great watch"
+            },
+            {
+              "src": "/images/products/headphones-2.png",
+              "alt": "great watch"
+            },
+            {
+              "src": "/images/products/headphones-3.png",
+              "alt": "great watch"
+            }
+          ],
+          "detailedProductViews": [
+            "description",
+            "additional info",
+            "reviews",
+            "video"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1729503462411.841",
+      "cart": [],
+      "favorites": []
+    },
+    {
+      "id": "1729503539637.2314",
+      "cart": [],
+      "favorites": []
+    },
+    {
+      "id": "1729503660797.016",
+      "cart": [],
+      "favorites": []
+    },
+    {
+      "id": "1729503850263.2168",
+      "cart": [
+        {
+          "id": 1,
+          "name": "Watches",
+          "code": "Y523201",
+          "originalPrice": 55,
+          "discountedPrice": 35,
+          "img": {
+            "src": "/images/products/watches.png",
+            "alt": "Great watch"
+          },
+          "rating": 3,
+          "description": {
+            "title": "Varius tempor.",
+            "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tellus porttitor purus, et volutpat sit.",
+            "long": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor. Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam. Integer feugiat odio ut dictum viverra. Donec vehicula nisi placerat cursus mollis. Nunc aliquam tempor justo, ut sagittis nisi. Mauris ullamcorper quis nisl sed dictum. Maecenas quam risus, congue quis accumsan at, imperdiet sed lectus. Aliquam in est purus"
+          },
+          "details": [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur.",
+            "Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante.",
+            "Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor.",
+            "Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam.",
+            "Phasellus quis sodales augue. Integer feugiat odio ut dictum viverra."
+          ],
+          "imgViews": [
+            {
+              "src": "/images/products/headphones.png",
+              "alt": "Great watch"
+            },
+            {
+              "src": "/images/products/headphones-2.png",
+              "alt": "great watch"
+            },
+            {
+              "src": "/images/products/headphones-3.png",
+              "alt": "great watch"
+            }
+          ],
+          "detailedProductViews": [
+            "description",
+            "additional info",
+            "reviews",
+            "video"
+          ],
+          "quantity": 2,
+          "total": 70
+        }
+      ],
+      "favorites": []
+    },
+    {
+      "id": "1729503978512.67",
+      "cart": [
+        {
+          "id": 2,
+          "name": "Headphones",
+          "code": "Y523201",
+          "originalPrice": 99,
+          "discountedPrice": 89,
+          "img": {
+            "src": "/images/products/headphones.png",
+            "alt": "Great watch"
+          },
+          "rating": 3,
+          "description": {
+            "title": "Varius tempor.",
+            "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tellus porttitor purus, et volutpat sit.",
+            "long": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor. Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam. Integer feugiat odio ut dictum viverra. Donec vehicula nisi placerat cursus mollis. Nunc aliquam tempor justo, ut sagittis nisi. Mauris ullamcorper quis nisl sed dictum. Maecenas quam risus, congue quis accumsan at, imperdiet sed lectus. Aliquam in est purus"
+          },
+          "details": [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur.",
+            "Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante.",
+            "Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor.",
+            "Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam.",
+            "Phasellus quis sodales augue. Integer feugiat odio ut dictum viverra."
+          ],
+          "imgViews": [
+            {
+              "src": "/images/products/headphones.png",
+              "alt": "Great watch"
+            },
+            {
+              "src": "/images/products/headphones-2.png",
+              "alt": "great watch"
+            },
+            {
+              "src": "/images/products/headphones-3.png",
+              "alt": "great watch"
+            }
+          ],
+          "detailedProductViews": [
+            "description",
+            "additional info",
+            "reviews",
+            "video"
+          ],
+          "quantity": 3,
+          "total": 267
+        },
+        {
+          "id": 1,
+          "name": "Watches",
+          "code": "Y523201",
+          "originalPrice": 55,
+          "discountedPrice": 35,
+          "img": {
+            "src": "/images/products/watches.png",
+            "alt": "Great watch"
+          },
+          "rating": 3,
+          "description": {
+            "title": "Varius tempor.",
+            "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tellus porttitor purus, et volutpat sit.",
+            "long": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor. Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam. Integer feugiat odio ut dictum viverra. Donec vehicula nisi placerat cursus mollis. Nunc aliquam tempor justo, ut sagittis nisi. Mauris ullamcorper quis nisl sed dictum. Maecenas quam risus, congue quis accumsan at, imperdiet sed lectus. Aliquam in est purus"
+          },
+          "details": [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur.",
+            "Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante.",
+            "Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor.",
+            "Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam.",
+            "Phasellus quis sodales augue. Integer feugiat odio ut dictum viverra."
+          ],
+          "imgViews": [
+            {
+              "src": "/images/products/headphones.png",
+              "alt": "Great watch"
+            },
+            {
+              "src": "/images/products/headphones-2.png",
+              "alt": "great watch"
+            },
+            {
+              "src": "/images/products/headphones-3.png",
+              "alt": "great watch"
+            }
+          ],
+          "detailedProductViews": [
+            "description",
+            "additional info",
+            "reviews",
+            "video"
+          ],
+          "quantity": 1,
+          "total": 35
+        }
+      ],
+      "favorites": [
+        {
+          "id": 1,
+          "name": "Watches",
+          "code": "Y523201",
+          "originalPrice": 55,
+          "discountedPrice": 35,
+          "img": {
+            "src": "/images/products/watches.png",
+            "alt": "Great watch"
+          },
+          "rating": 3,
+          "description": {
+            "title": "Varius tempor.",
+            "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tellus porttitor purus, et volutpat sit.",
+            "long": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor. Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam. Integer feugiat odio ut dictum viverra. Donec vehicula nisi placerat cursus mollis. Nunc aliquam tempor justo, ut sagittis nisi. Mauris ullamcorper quis nisl sed dictum. Maecenas quam risus, congue quis accumsan at, imperdiet sed lectus. Aliquam in est purus"
+          },
+          "details": [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur.",
+            "Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante.",
+            "Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor.",
+            "Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam.",
+            "Phasellus quis sodales augue. Integer feugiat odio ut dictum viverra."
+          ],
+          "imgViews": [
+            {
+              "src": "/images/products/headphones.png",
+              "alt": "Great watch"
+            },
+            {
+              "src": "/images/products/headphones-2.png",
+              "alt": "great watch"
+            },
+            {
+              "src": "/images/products/headphones-3.png",
+              "alt": "great watch"
+            }
+          ],
+          "detailedProductViews": [
+            "description",
+            "additional info",
+            "reviews",
+            "video"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1729505646147.3801",
+      "cart": [],
+      "favorites": []
+    },
+    {
+      "id": "1729505847778.1326",
+      "cart": [
+        {
+          "id": 1,
+          "name": "Watches",
+          "code": "Y523201",
+          "originalPrice": 55,
+          "discountedPrice": 35,
+          "img": {
+            "src": "/images/products/watches.png",
+            "alt": "Great watch"
+          },
+          "rating": 3,
+          "description": {
+            "title": "Varius tempor.",
+            "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tellus porttitor purus, et volutpat sit.",
+            "long": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor. Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam. Integer feugiat odio ut dictum viverra. Donec vehicula nisi placerat cursus mollis. Nunc aliquam tempor justo, ut sagittis nisi. Mauris ullamcorper quis nisl sed dictum. Maecenas quam risus, congue quis accumsan at, imperdiet sed lectus. Aliquam in est purus"
+          },
+          "details": [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur.",
+            "Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante.",
+            "Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor.",
+            "Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam.",
+            "Phasellus quis sodales augue. Integer feugiat odio ut dictum viverra."
+          ],
+          "imgViews": [
+            {
+              "src": "/images/products/headphones.png",
+              "alt": "Great watch"
+            },
+            {
+              "src": "/images/products/headphones-2.png",
+              "alt": "great watch"
+            },
+            {
+              "src": "/images/products/headphones-3.png",
+              "alt": "great watch"
+            }
+          ],
+          "detailedProductViews": [
+            "description",
+            "additional info",
+            "reviews",
+            "video"
+          ],
+          "quantity": 1,
+          "total": 35
+        }
+      ],
+      "favorites": [
+        {
+          "id": 1,
+          "name": "Watches",
+          "code": "Y523201",
+          "originalPrice": 55,
+          "discountedPrice": 35,
+          "img": {
+            "src": "/images/products/watches.png",
+            "alt": "Great watch"
+          },
+          "rating": 3,
+          "description": {
+            "title": "Varius tempor.",
+            "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tellus porttitor purus, et volutpat sit.",
+            "long": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor. Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam. Integer feugiat odio ut dictum viverra. Donec vehicula nisi placerat cursus mollis. Nunc aliquam tempor justo, ut sagittis nisi. Mauris ullamcorper quis nisl sed dictum. Maecenas quam risus, congue quis accumsan at, imperdiet sed lectus. Aliquam in est purus"
+          },
+          "details": [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur.",
+            "Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante.",
+            "Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor.",
+            "Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam.",
+            "Phasellus quis sodales augue. Integer feugiat odio ut dictum viverra."
+          ],
+          "imgViews": [
+            {
+              "src": "/images/products/headphones.png",
+              "alt": "Great watch"
+            },
+            {
+              "src": "/images/products/headphones-2.png",
+              "alt": "great watch"
+            },
+            {
+              "src": "/images/products/headphones-3.png",
+              "alt": "great watch"
+            }
+          ],
+          "detailedProductViews": [
+            "description",
+            "additional info",
+            "reviews",
+            "video"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1729506857938.0261",
+      "cart": [
+        {
+          "id": 1,
+          "name": "Watches",
+          "code": "Y523201",
+          "originalPrice": 55,
+          "discountedPrice": 35,
+          "img": {
+            "src": "/images/products/watches.png",
+            "alt": "Great watch"
+          },
+          "rating": 3,
+          "description": {
+            "title": "Varius tempor.",
+            "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tellus porttitor purus, et volutpat sit.",
+            "long": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor. Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam. Integer feugiat odio ut dictum viverra. Donec vehicula nisi placerat cursus mollis. Nunc aliquam tempor justo, ut sagittis nisi. Mauris ullamcorper quis nisl sed dictum. Maecenas quam risus, congue quis accumsan at, imperdiet sed lectus. Aliquam in est purus"
+          },
+          "details": [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur.",
+            "Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante.",
+            "Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor.",
+            "Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam.",
+            "Phasellus quis sodales augue. Integer feugiat odio ut dictum viverra."
+          ],
+          "imgViews": [
+            {
+              "src": "/images/products/headphones.png",
+              "alt": "Great watch"
+            },
+            {
+              "src": "/images/products/headphones-2.png",
+              "alt": "great watch"
+            },
+            {
+              "src": "/images/products/headphones-3.png",
+              "alt": "great watch"
+            }
+          ],
+          "detailedProductViews": [
+            "description",
+            "additional info",
+            "reviews",
+            "video"
+          ],
+          "quantity": 1,
+          "total": 35
+        }
+      ],
+      "favorites": []
+    }
+  ],
+  "products": {
+    "all": [
+      {
+        "id": 1,
+        "name": "Watches",
+        "code": "Y523201",
+        "originalPrice": 55,
+        "discountedPrice": 35,
+        "img": {
+          "src": "/images/products/watches.png",
+          "alt": "Great watch"
+        },
+        "rating": 3,
+        "description": {
+          "title": "Varius tempor.",
+          "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tellus porttitor purus, et volutpat sit.",
+          "long": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor. Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam. Integer feugiat odio ut dictum viverra. Donec vehicula nisi placerat cursus mollis. Nunc aliquam tempor justo, ut sagittis nisi. Mauris ullamcorper quis nisl sed dictum. Maecenas quam risus, congue quis accumsan at, imperdiet sed lectus. Aliquam in est purus"
+        },
+        "details": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur.",
+          "Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante.",
+          "Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor.",
+          "Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam.",
+          "Phasellus quis sodales augue. Integer feugiat odio ut dictum viverra."
+        ],
+        "imgViews": [
+          {
+            "src": "/images/products/headphones.png",
+            "alt": "Great watch"
+          },
+          {
+            "src": "/images/products/headphones-2.png",
+            "alt": "great watch"
+          },
+          {
+            "src": "/images/products/headphones-3.png",
+            "alt": "great watch"
+          }
+        ],
+        "detailedProductViews": [
+          "description",
+          "additional info",
+          "reviews",
+          "video"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Headphones",
+        "code": "Y523201",
+        "originalPrice": 99,
+        "discountedPrice": 89,
+        "img": {
+          "src": "/images/products/headphones.png",
+          "alt": "Great watch"
+        },
+        "rating": 3,
+        "description": {
+          "title": "Varius tempor.",
+          "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tellus porttitor purus, et volutpat sit.",
+          "long": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor. Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam. Integer feugiat odio ut dictum viverra. Donec vehicula nisi placerat cursus mollis. Nunc aliquam tempor justo, ut sagittis nisi. Mauris ullamcorper quis nisl sed dictum. Maecenas quam risus, congue quis accumsan at, imperdiet sed lectus. Aliquam in est purus"
+        },
+        "details": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur.",
+          "Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante.",
+          "Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor.",
+          "Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam.",
+          "Phasellus quis sodales augue. Integer feugiat odio ut dictum viverra."
+        ],
+        "imgViews": [
+          {
+            "src": "/images/products/headphones.png",
+            "alt": "Great watch"
+          },
+          {
+            "src": "/images/products/headphones-2.png",
+            "alt": "great watch"
+          },
+          {
+            "src": "/images/products/headphones-3.png",
+            "alt": "great watch"
+          }
+        ],
+        "detailedProductViews": [
+          "description",
+          "additional info",
+          "reviews",
+          "video"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Laptop",
+        "code": "Y523201",
+        "originalPrice": 3500,
+        "discountedPrice": 2999,
+        "img": {
+          "src": "/images/products/laptop.png",
+          "alt": "Great watch"
+        },
+        "rating": 3,
+        "description": {
+          "title": "Varius tempor.",
+          "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tellus porttitor purus, et volutpat sit.",
+          "long": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor. Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam. Integer feugiat odio ut dictum viverra. Donec vehicula nisi placerat cursus mollis. Nunc aliquam tempor justo, ut sagittis nisi. Mauris ullamcorper quis nisl sed dictum. Maecenas quam risus, congue quis accumsan at, imperdiet sed lectus. Aliquam in est purus"
+        },
+        "details": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur.",
+          "Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante.",
+          "Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor.",
+          "Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam.",
+          "Phasellus quis sodales augue. Integer feugiat odio ut dictum viverra."
+        ],
+        "imgViews": [
+          {
+            "src": "/images/products/headphones.png",
+            "alt": "Great watch"
+          },
+          {
+            "src": "/images/products/headphones-2.png",
+            "alt": "great watch"
+          },
+          {
+            "src": "/images/products/headphones-3.png",
+            "alt": "great watch"
+          }
+        ],
+        "detailedProductViews": [
+          "description",
+          "additional info",
+          "reviews",
+          "video"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Black watches",
+        "code": "Y523201",
+        "originalPrice": 62,
+        "discountedPrice": 42,
+        "img": {
+          "src": "/images/products/black-watches.png",
+          "alt": "Great watch"
+        },
+        "rating": 3,
+        "description": {
+          "title": "Varius tempor.",
+          "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tellus porttitor purus, et volutpat sit.",
+          "long": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor. Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam. Integer feugiat odio ut dictum viverra. Donec vehicula nisi placerat cursus mollis. Nunc aliquam tempor justo, ut sagittis nisi. Mauris ullamcorper quis nisl sed dictum. Maecenas quam risus, congue quis accumsan at, imperdiet sed lectus. Aliquam in est purus"
+        },
+        "details": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur.",
+          "Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante.",
+          "Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor.",
+          "Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam.",
+          "Phasellus quis sodales augue. Integer feugiat odio ut dictum viverra."
+        ],
+        "imgViews": [
+          {
+            "src": "/images/products/headphones.png",
+            "alt": "Great watch"
+          },
+          {
+            "src": "/images/products/headphones-2.png",
+            "alt": "great watch"
+          },
+          {
+            "src": "/images/products/headphones-3.png",
+            "alt": "great watch"
+          }
+        ],
+        "detailedProductViews": [
+          "description",
+          "additional info",
+          "reviews",
+          "video"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Game console",
+        "code": "Y523201",
+        "originalPrice": 89,
+        "discountedPrice": 76,
+        "img": {
+          "src": "/images/products/game-console.png",
+          "alt": "Great game console"
+        },
+        "rating": 3,
+        "description": {
+          "title": "Varius tempor.",
+          "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tellus porttitor purus, et volutpat sit.",
+          "long": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor. Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam. Integer feugiat odio ut dictum viverra. Donec vehicula nisi placerat cursus mollis. Nunc aliquam tempor justo, ut sagittis nisi. Mauris ullamcorper quis nisl sed dictum. Maecenas quam risus, congue quis accumsan at, imperdiet sed lectus. Aliquam in est purus"
+        },
+        "details": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur.",
+          "Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante.",
+          "Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor.",
+          "Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam.",
+          "Phasellus quis sodales augue. Integer feugiat odio ut dictum viverra."
+        ],
+        "imgViews": [
+          {
+            "src": "/images/products/headphones.png",
+            "alt": "Great watch"
+          },
+          {
+            "src": "/images/products/headphones-2.png",
+            "alt": "great watch"
+          },
+          {
+            "src": "/images/products/headphones-3.png",
+            "alt": "great watch"
+          }
+        ],
+        "detailedProductViews": [
+          "description",
+          "additional info",
+          "reviews",
+          "video"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Shoes",
+        "code": "Y523201",
+        "originalPrice": 75,
+        "discountedPrice": 57,
+        "img": {
+          "src": "/images/products/shoes.png",
+          "alt": "Great shoes"
+        },
+        "rating": 3,
+        "description": {
+          "title": "Varius tempor.",
+          "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tellus porttitor purus, et volutpat sit.",
+          "long": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor. Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam. Integer feugiat odio ut dictum viverra. Donec vehicula nisi placerat cursus mollis. Nunc aliquam tempor justo, ut sagittis nisi. Mauris ullamcorper quis nisl sed dictum. Maecenas quam risus, congue quis accumsan at, imperdiet sed lectus. Aliquam in est purus"
+        },
+        "details": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur.",
+          "Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante.",
+          "Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor.",
+          "Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam.",
+          "Phasellus quis sodales augue. Integer feugiat odio ut dictum viverra."
+        ],
+        "imgViews": [
+          {
+            "src": "/images/products/headphones.png",
+            "alt": "Great watch"
+          },
+          {
+            "src": "/images/products/headphones-2.png",
+            "alt": "great watch"
+          },
+          {
+            "src": "/images/products/headphones-3.png",
+            "alt": "great watch"
+          }
+        ],
+        "detailedProductViews": [
+          "description",
+          "additional info",
+          "reviews",
+          "video"
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Perfume",
+        "code": "Y523201",
+        "originalPrice": 29,
+        "discountedPrice": 19,
+        "img": {
+          "src": "/images/products/perfume.png",
+          "alt": "Great perfume"
+        },
+        "rating": 3,
+        "description": {
+          "title": "Varius tempor.",
+          "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tellus porttitor purus, et volutpat sit.",
+          "long": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor. Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam. Integer feugiat odio ut dictum viverra. Donec vehicula nisi placerat cursus mollis. Nunc aliquam tempor justo, ut sagittis nisi. Mauris ullamcorper quis nisl sed dictum. Maecenas quam risus, congue quis accumsan at, imperdiet sed lectus. Aliquam in est purus"
+        },
+        "details": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur.",
+          "Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante.",
+          "Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor.",
+          "Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam.",
+          "Phasellus quis sodales augue. Integer feugiat odio ut dictum viverra."
+        ],
+        "imgViews": [
+          {
+            "src": "/images/products/headphones.png",
+            "alt": "Great watch"
+          },
+          {
+            "src": "/images/products/headphones-2.png",
+            "alt": "great watch"
+          },
+          {
+            "src": "/images/products/headphones-3.png",
+            "alt": "great watch"
+          }
+        ],
+        "detailedProductViews": [
+          "description",
+          "additional info",
+          "reviews",
+          "video"
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Present box",
+        "code": "Y523201",
+        "originalPrice": 29,
+        "discountedPrice": 12,
+        "img": {
+          "src": "/images/products/present-box.png",
+          "alt": "Great present box"
+        },
+        "rating": 3,
+        "description": {
+          "title": "Varius tempor.",
+          "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tellus porttitor purus, et volutpat sit.",
+          "long": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor. Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam. Integer feugiat odio ut dictum viverra. Donec vehicula nisi placerat cursus mollis. Nunc aliquam tempor justo, ut sagittis nisi. Mauris ullamcorper quis nisl sed dictum. Maecenas quam risus, congue quis accumsan at, imperdiet sed lectus. Aliquam in est purus"
+        },
+        "details": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur.",
+          "Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante.",
+          "Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor.",
+          "Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam.",
+          "Phasellus quis sodales augue. Integer feugiat odio ut dictum viverra."
+        ],
+        "imgViews": [
+          {
+            "src": "/images/products/headphones.png",
+            "alt": "Great watch"
+          },
+          {
+            "src": "/images/products/headphones-2.png",
+            "alt": "great watch"
+          },
+          {
+            "src": "/images/products/headphones-3.png",
+            "alt": "great watch"
+          }
+        ],
+        "detailedProductViews": [
+          "description",
+          "additional info",
+          "reviews",
+          "video"
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Watches",
+        "code": "Y523201",
+        "originalPrice": 76,
+        "discountedPrice": 67,
+        "img": {
+          "src": "/images/products/smart-watches.png",
+          "alt": "Great smart watch"
+        },
+        "rating": 3,
+        "description": {
+          "title": "Varius tempor.",
+          "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tellus porttitor purus, et volutpat sit.",
+          "long": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor. Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam. Integer feugiat odio ut dictum viverra. Donec vehicula nisi placerat cursus mollis. Nunc aliquam tempor justo, ut sagittis nisi. Mauris ullamcorper quis nisl sed dictum. Maecenas quam risus, congue quis accumsan at, imperdiet sed lectus. Aliquam in est purus"
+        },
+        "details": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur.",
+          "Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante.",
+          "Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor.",
+          "Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam.",
+          "Phasellus quis sodales augue. Integer feugiat odio ut dictum viverra."
+        ],
+        "imgViews": [
+          {
+            "src": "/images/products/headphones.png",
+            "alt": "Great watch"
+          },
+          {
+            "src": "/images/products/headphones-2.png",
+            "alt": "great watch"
+          },
+          {
+            "src": "/images/products/headphones-3.png",
+            "alt": "great watch"
+          }
+        ],
+        "detailedProductViews": [
+          "description",
+          "additional info",
+          "reviews",
+          "video"
+        ]
+      },
+      {
+        "id": 10,
+        "name": "Ring",
+        "code": "Y523201",
+        "originalPrice": 65,
+        "discountedPrice": 56,
+        "img": {
+          "src": "/images/products/ring.png",
+          "alt": "Great ring"
+        },
+        "rating": 3,
+        "description": {
+          "title": "Varius tempor.",
+          "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tellus porttitor purus, et volutpat sit.",
+          "long": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor. Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam. Integer feugiat odio ut dictum viverra. Donec vehicula nisi placerat cursus mollis. Nunc aliquam tempor justo, ut sagittis nisi. Mauris ullamcorper quis nisl sed dictum. Maecenas quam risus, congue quis accumsan at, imperdiet sed lectus. Aliquam in est purus"
+        },
+        "details": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur.",
+          "Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante.",
+          "Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor.",
+          "Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam.",
+          "Phasellus quis sodales augue. Integer feugiat odio ut dictum viverra."
+        ],
+        "imgViews": [
+          {
+            "src": "/images/products/headphones.png",
+            "alt": "Great watch"
+          },
+          {
+            "src": "/images/products/headphones-2.png",
+            "alt": "great watch"
+          },
+          {
+            "src": "/images/products/headphones-3.png",
+            "alt": "great watch"
+          }
+        ],
+        "detailedProductViews": [
+          "description",
+          "additional info",
+          "reviews",
+          "video"
+        ]
+      },
+      {
+        "id": 11,
+        "name": "Laptop3",
+        "code": "Y523201",
+        "originalPrice": 3500,
+        "img": {
+          "src": "/images/products/laptop.png",
+          "alt": "Great watch"
+        },
+        "rating": 3,
+        "description": {
+          "title": "Varius tempor.",
+          "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tellus porttitor purus, et volutpat sit.",
+          "long": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor. Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam. Integer feugiat odio ut dictum viverra. Donec vehicula nisi placerat cursus mollis. Nunc aliquam tempor justo, ut sagittis nisi. Mauris ullamcorper quis nisl sed dictum. Maecenas quam risus, congue quis accumsan at, imperdiet sed lectus. Aliquam in est purus"
+        },
+        "details": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur.",
+          "Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante.",
+          "Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor.",
+          "Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam.",
+          "Phasellus quis sodales augue. Integer feugiat odio ut dictum viverra."
+        ],
+        "imgViews": [
+          {
+            "src": "/images/products/headphones.png",
+            "alt": "Great watch"
+          },
+          {
+            "src": "/images/products/headphones-2.png",
+            "alt": "great watch"
+          },
+          {
+            "src": "/images/products/headphones-3.png",
+            "alt": "great watch"
+          }
+        ],
+        "detailedProductViews": [
+          "description",
+          "additional info",
+          "reviews",
+          "video"
+        ]
+      },
+      {
+        "id": 12,
+        "name": "Black watches3",
+        "code": "Y523201",
+        "originalPrice": 62,
+        "img": {
+          "src": "/images/products/black-watches.png",
+          "alt": "Great watch"
+        },
+        "rating": 3,
+        "description": {
+          "title": "Varius tempor.",
+          "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tellus porttitor purus, et volutpat sit.",
+          "long": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor. Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam. Integer feugiat odio ut dictum viverra. Donec vehicula nisi placerat cursus mollis. Nunc aliquam tempor justo, ut sagittis nisi. Mauris ullamcorper quis nisl sed dictum. Maecenas quam risus, congue quis accumsan at, imperdiet sed lectus. Aliquam in est purus"
+        },
+        "details": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur.",
+          "Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante.",
+          "Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor.",
+          "Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam.",
+          "Phasellus quis sodales augue. Integer feugiat odio ut dictum viverra."
+        ],
+        "imgViews": [
+          {
+            "src": "/images/products/headphones.png",
+            "alt": "Great watch"
+          },
+          {
+            "src": "/images/products/headphones-2.png",
+            "alt": "great watch"
+          },
+          {
+            "src": "/images/products/headphones-3.png",
+            "alt": "great watch"
+          }
+        ],
+        "detailedProductViews": [
+          "description",
+          "additional info",
+          "reviews",
+          "video"
+        ]
+      },
+      {
+        "id": 13,
+        "name": "Black watches4",
+        "code": "Y523201",
+        "originalPrice": 62,
+        "img": {
+          "src": "/images/products/black-watches.png",
+          "alt": "Great watch"
+        },
+        "rating": 3,
+        "description": {
+          "title": "Varius tempor.",
+          "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tellus porttitor purus, et volutpat sit.",
+          "long": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor. Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam. Integer feugiat odio ut dictum viverra. Donec vehicula nisi placerat cursus mollis. Nunc aliquam tempor justo, ut sagittis nisi. Mauris ullamcorper quis nisl sed dictum. Maecenas quam risus, congue quis accumsan at, imperdiet sed lectus. Aliquam in est purus"
+        },
+        "details": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur.",
+          "Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante.",
+          "Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor.",
+          "Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam.",
+          "Phasellus quis sodales augue. Integer feugiat odio ut dictum viverra."
+        ],
+        "imgViews": [
+          {
+            "src": "/images/products/headphones.png",
+            "alt": "Great watch"
+          },
+          {
+            "src": "/images/products/headphones-2.png",
+            "alt": "great watch"
+          },
+          {
+            "src": "/images/products/headphones-3.png",
+            "alt": "great watch"
+          }
+        ],
+        "detailedProductViews": [
+          "description",
+          "additional info",
+          "reviews",
+          "video"
+        ]
+      },
+      {
+        "id": 14,
+        "name": "B&B Italian Sofa",
+        "code": "Y523201",
+        "originalPrice": 32,
+        "img": {
+          "src": "/images/products/italian-sofa.png",
+          "alt": "Great sofa"
+        },
+        "rating": 3,
+        "description": {
+          "title": "Varius tempor.",
+          "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tellus porttitor purus, et volutpat sit.",
+          "long": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor. Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam. Integer feugiat odio ut dictum viverra. Donec vehicula nisi placerat cursus mollis. Nunc aliquam tempor justo, ut sagittis nisi. Mauris ullamcorper quis nisl sed dictum. Maecenas quam risus, congue quis accumsan at, imperdiet sed lectus. Aliquam in est purus"
+        },
+        "details": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur.",
+          "Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante.",
+          "Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor.",
+          "Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam.",
+          "Phasellus quis sodales augue. Integer feugiat odio ut dictum viverra."
+        ],
+        "imgViews": [
+          {
+            "src": "/images/products/headphones.png",
+            "alt": "Great watch"
+          },
+          {
+            "src": "/images/products/headphones-2.png",
+            "alt": "great watch"
+          },
+          {
+            "src": "/images/products/headphones-3.png",
+            "alt": "great watch"
+          }
+        ],
+        "detailedProductViews": [
+          "description",
+          "additional info",
+          "reviews",
+          "video"
+        ]
+      },
+      {
+        "id": 15,
+        "name": "Black watches5",
+        "code": "Y523201",
+        "originalPrice": 62,
+        "img": {
+          "src": "/images/products/black-watches.png",
+          "alt": "Great watch"
+        },
+        "set": "best-seller",
+        "rating": 3,
+        "description": {
+          "title": "Varius tempor.",
+          "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tellus porttitor purus, et volutpat sit.",
+          "long": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor. Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam. Integer feugiat odio ut dictum viverra. Donec vehicula nisi placerat cursus mollis. Nunc aliquam tempor justo, ut sagittis nisi. Mauris ullamcorper quis nisl sed dictum. Maecenas quam risus, congue quis accumsan at, imperdiet sed lectus. Aliquam in est purus"
+        },
+        "details": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur.",
+          "Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante.",
+          "Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor.",
+          "Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam.",
+          "Phasellus quis sodales augue. Integer feugiat odio ut dictum viverra."
+        ],
+        "imgViews": [
+          {
+            "src": "/images/products/headphones.png",
+            "alt": "Great watch"
+          },
+          {
+            "src": "/images/products/headphones-2.png",
+            "alt": "great watch"
+          },
+          {
+            "src": "/images/products/headphones-3.png",
+            "alt": "great watch"
+          }
+        ],
+        "detailedProductViews": [
+          "description",
+          "additional info",
+          "reviews",
+          "video"
+        ]
+      },
+      {
+        "id": 16,
+        "name": "Black watches6",
+        "code": "Y523201",
+        "originalPrice": 62,
+        "img": {
+          "src": "/images/products/black-watches.png",
+          "alt": "Great watch"
+        },
+        "set": "best-seller",
+        "rating": 3,
+        "description": {
+          "title": "Varius tempor.",
+          "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tellus porttitor purus, et volutpat sit.",
+          "long": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor. Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam. Integer feugiat odio ut dictum viverra. Donec vehicula nisi placerat cursus mollis. Nunc aliquam tempor justo, ut sagittis nisi. Mauris ullamcorper quis nisl sed dictum. Maecenas quam risus, congue quis accumsan at, imperdiet sed lectus. Aliquam in est purus"
+        },
+        "details": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur.",
+          "Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante.",
+          "Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor.",
+          "Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam.",
+          "Phasellus quis sodales augue. Integer feugiat odio ut dictum viverra."
+        ],
+        "imgViews": [
+          {
+            "src": "/images/products/headphones.png",
+            "alt": "Great watch"
+          },
+          {
+            "src": "/images/products/headphones-2.png",
+            "alt": "great watch"
+          },
+          {
+            "src": "/images/products/headphones-3.png",
+            "alt": "great watch"
+          }
+        ],
+        "detailedProductViews": [
+          "description",
+          "additional info",
+          "reviews",
+          "video"
+        ]
+      },
+      {
+        "id": 17,
+        "name": "Game console2",
+        "code": "Y523201",
+        "originalPrice": 89,
+        "discountedPrice": 76,
+        "img": {
+          "src": "/images/products/game-console.png",
+          "alt": "Great game console"
+        },
+        "set": "featured",
+        "rating": 3,
+        "description": {
+          "title": "Varius tempor.",
+          "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tellus porttitor purus, et volutpat sit.",
+          "long": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor. Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam. Integer feugiat odio ut dictum viverra. Donec vehicula nisi placerat cursus mollis. Nunc aliquam tempor justo, ut sagittis nisi. Mauris ullamcorper quis nisl sed dictum. Maecenas quam risus, congue quis accumsan at, imperdiet sed lectus. Aliquam in est purus"
+        },
+        "details": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur.",
+          "Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante.",
+          "Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor.",
+          "Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam.",
+          "Phasellus quis sodales augue. Integer feugiat odio ut dictum viverra."
+        ],
+        "imgViews": [
+          {
+            "src": "/images/products/headphones.png",
+            "alt": "Great watch"
+          },
+          {
+            "src": "/images/products/headphones-2.png",
+            "alt": "great watch"
+          },
+          {
+            "src": "/images/products/headphones-3.png",
+            "alt": "great watch"
+          }
+        ],
+        "detailedProductViews": [
+          "description",
+          "additional info",
+          "reviews",
+          "video"
+        ]
+      },
+      {
+        "id": 18,
+        "name": "Shoes2",
+        "code": "Y523201",
+        "originalPrice": 75,
+        "discountedPrice": 57,
+        "img": {
+          "src": "/images/products/shoes.png",
+          "alt": "Great shoes"
+        },
+        "set": "featured",
+        "rating": 3,
+        "description": {
+          "title": "Varius tempor.",
+          "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tellus porttitor purus, et volutpat sit.",
+          "long": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor. Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam. Integer feugiat odio ut dictum viverra. Donec vehicula nisi placerat cursus mollis. Nunc aliquam tempor justo, ut sagittis nisi. Mauris ullamcorper quis nisl sed dictum. Maecenas quam risus, congue quis accumsan at, imperdiet sed lectus. Aliquam in est purus"
+        },
+        "details": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur.",
+          "Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante.",
+          "Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor.",
+          "Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam.",
+          "Phasellus quis sodales augue. Integer feugiat odio ut dictum viverra."
+        ],
+        "imgViews": [
+          {
+            "src": "/images/products/headphones.png",
+            "alt": "Great watch"
+          },
+          {
+            "src": "/images/products/headphones-2.png",
+            "alt": "great watch"
+          },
+          {
+            "src": "/images/products/headphones-3.png",
+            "alt": "great watch"
+          }
+        ],
+        "detailedProductViews": [
+          "description",
+          "additional info",
+          "reviews",
+          "video"
+        ]
+      },
+      {
+        "id": 19,
+        "name": "Perfume2",
+        "code": "Y523201",
+        "originalPrice": 29,
+        "discountedPrice": 19,
+        "img": {
+          "src": "/images/products/perfume.png",
+          "alt": "Great perfume"
+        },
+        "set": "featured",
+        "rating": 3,
+        "description": {
+          "title": "Varius tempor.",
+          "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tellus porttitor purus, et volutpat sit.",
+          "long": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor. Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam. Integer feugiat odio ut dictum viverra. Donec vehicula nisi placerat cursus mollis. Nunc aliquam tempor justo, ut sagittis nisi. Mauris ullamcorper quis nisl sed dictum. Maecenas quam risus, congue quis accumsan at, imperdiet sed lectus. Aliquam in est purus"
+        },
+        "details": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur.",
+          "Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante.",
+          "Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor.",
+          "Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam.",
+          "Phasellus quis sodales augue. Integer feugiat odio ut dictum viverra."
+        ],
+        "imgViews": [
+          {
+            "src": "/images/products/headphones.png",
+            "alt": "Great watch"
+          },
+          {
+            "src": "/images/products/headphones-2.png",
+            "alt": "great watch"
+          },
+          {
+            "src": "/images/products/headphones-3.png",
+            "alt": "great watch"
+          }
+        ],
+        "detailedProductViews": [
+          "description",
+          "additional info",
+          "reviews",
+          "video"
+        ]
+      },
+      {
+        "id": 20,
+        "name": "Present box2",
+        "code": "Y523201",
+        "originalPrice": 29,
+        "discountedPrice": 12,
+        "img": {
+          "src": "/images/products/present-box.png",
+          "alt": "Great present box"
+        },
+        "set": "featured",
+        "rating": 3,
+        "description": {
+          "title": "Varius tempor.",
+          "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tellus porttitor purus, et volutpat sit.",
+          "long": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor. Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam. Integer feugiat odio ut dictum viverra. Donec vehicula nisi placerat cursus mollis. Nunc aliquam tempor justo, ut sagittis nisi. Mauris ullamcorper quis nisl sed dictum. Maecenas quam risus, congue quis accumsan at, imperdiet sed lectus. Aliquam in est purus"
+        },
+        "details": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur.",
+          "Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante.",
+          "Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor.",
+          "Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam.",
+          "Phasellus quis sodales augue. Integer feugiat odio ut dictum viverra."
+        ],
+        "imgViews": [
+          {
+            "src": "/images/products/headphones.png",
+            "alt": "Great watch"
+          },
+          {
+            "src": "/images/products/headphones-2.png",
+            "alt": "great watch"
+          },
+          {
+            "src": "/images/products/headphones-3.png",
+            "alt": "great watch"
+          }
+        ],
+        "detailedProductViews": [
+          "description",
+          "additional info",
+          "reviews",
+          "video"
+        ]
+      },
+      {
+        "id": 21,
+        "name": "Watches2",
+        "code": "Y523201",
+        "originalPrice": 76,
+        "discountedPrice": 67,
+        "img": {
+          "src": "/images/products/smart-watches.png",
+          "alt": "Great smart watch"
+        },
+        "set": "featured",
+        "rating": 3,
+        "description": {
+          "title": "Varius tempor.",
+          "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tellus porttitor purus, et volutpat sit.",
+          "long": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor. Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam. Integer feugiat odio ut dictum viverra. Donec vehicula nisi placerat cursus mollis. Nunc aliquam tempor justo, ut sagittis nisi. Mauris ullamcorper quis nisl sed dictum. Maecenas quam risus, congue quis accumsan at, imperdiet sed lectus. Aliquam in est purus"
+        },
+        "details": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur.",
+          "Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante.",
+          "Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor.",
+          "Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam.",
+          "Phasellus quis sodales augue. Integer feugiat odio ut dictum viverra."
+        ],
+        "imgViews": [
+          {
+            "src": "/images/products/headphones.png",
+            "alt": "Great watch"
+          },
+          {
+            "src": "/images/products/headphones-2.png",
+            "alt": "great watch"
+          },
+          {
+            "src": "/images/products/headphones-3.png",
+            "alt": "great watch"
+          }
+        ],
+        "detailedProductViews": [
+          "description",
+          "additional info",
+          "reviews",
+          "video"
+        ]
+      },
+      {
+        "id": 22,
+        "name": "Ring2",
+        "code": "Y523201",
+        "originalPrice": 65,
+        "discountedPrice": 56,
+        "img": {
+          "src": "/images/products/ring.png",
+          "alt": "Great ring"
+        },
+        "set": "featured",
+        "rating": 3,
+        "description": {
+          "title": "Varius tempor.",
+          "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tellus porttitor purus, et volutpat sit.",
+          "long": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor. Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam. Integer feugiat odio ut dictum viverra. Donec vehicula nisi placerat cursus mollis. Nunc aliquam tempor justo, ut sagittis nisi. Mauris ullamcorper quis nisl sed dictum. Maecenas quam risus, congue quis accumsan at, imperdiet sed lectus. Aliquam in est purus"
+        },
+        "details": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur.",
+          "Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante.",
+          "Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor.",
+          "Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam.",
+          "Phasellus quis sodales augue. Integer feugiat odio ut dictum viverra."
+        ],
+        "imgViews": [
+          {
+            "src": "/images/products/headphones.png",
+            "alt": "Great watch"
+          },
+          {
+            "src": "/images/products/headphones-2.png",
+            "alt": "great watch"
+          },
+          {
+            "src": "/images/products/headphones-3.png",
+            "alt": "great watch"
+          }
+        ],
+        "detailedProductViews": [
+          "description",
+          "additional info",
+          "reviews",
+          "video"
+        ]
+      },
+      {
+        "id": 23,
+        "name": "Present box2",
+        "code": "Y523201",
+        "originalPrice": 29,
+        "discountedPrice": 12,
+        "img": {
+          "src": "/images/products/present-box.png",
+          "alt": "Great present box"
+        },
+        "set": "special-offer",
+        "rating": 3,
+        "description": {
+          "title": "Varius tempor.",
+          "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tellus porttitor purus, et volutpat sit.",
+          "long": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor. Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam. Integer feugiat odio ut dictum viverra. Donec vehicula nisi placerat cursus mollis. Nunc aliquam tempor justo, ut sagittis nisi. Mauris ullamcorper quis nisl sed dictum. Maecenas quam risus, congue quis accumsan at, imperdiet sed lectus. Aliquam in est purus"
+        },
+        "details": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur.",
+          "Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante.",
+          "Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor.",
+          "Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam.",
+          "Phasellus quis sodales augue. Integer feugiat odio ut dictum viverra."
+        ],
+        "imgViews": [
+          {
+            "src": "/images/products/headphones.png",
+            "alt": "Great watch"
+          },
+          {
+            "src": "/images/products/headphones-2.png",
+            "alt": "great watch"
+          },
+          {
+            "src": "/images/products/headphones-3.png",
+            "alt": "great watch"
+          }
+        ],
+        "detailedProductViews": [
+          "description",
+          "additional info",
+          "reviews",
+          "video"
+        ]
+      },
+      {
+        "id": 24,
+        "name": "Watches2",
+        "code": "Y523201",
+        "originalPrice": 76,
+        "discountedPrice": 67,
+        "img": {
+          "src": "/images/products/smart-watches.png",
+          "alt": "Great smart watch"
+        },
+        "set": "special-offer",
+        "rating": 3,
+        "description": {
+          "title": "Varius tempor.",
+          "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tellus porttitor purus, et volutpat sit.",
+          "long": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor. Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam. Integer feugiat odio ut dictum viverra. Donec vehicula nisi placerat cursus mollis. Nunc aliquam tempor justo, ut sagittis nisi. Mauris ullamcorper quis nisl sed dictum. Maecenas quam risus, congue quis accumsan at, imperdiet sed lectus. Aliquam in est purus"
+        },
+        "details": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur.",
+          "Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante.",
+          "Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor.",
+          "Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam.",
+          "Phasellus quis sodales augue. Integer feugiat odio ut dictum viverra."
+        ],
+        "imgViews": [
+          {
+            "src": "/images/products/headphones.png",
+            "alt": "Great watch"
+          },
+          {
+            "src": "/images/products/headphones-2.png",
+            "alt": "great watch"
+          },
+          {
+            "src": "/images/products/headphones-3.png",
+            "alt": "great watch"
+          }
+        ],
+        "detailedProductViews": [
+          "description",
+          "additional info",
+          "reviews",
+          "video"
+        ]
+      },
+      {
+        "id": 25,
+        "name": "Ring2",
+        "code": "Y523201",
+        "originalPrice": 65,
+        "discountedPrice": 56,
+        "img": {
+          "src": "/images/products/ring.png",
+          "alt": "Great ring"
+        },
+        "set": "special-offer",
+        "rating": 3,
+        "description": {
+          "title": "Varius tempor.",
+          "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tellus porttitor purus, et volutpat sit.",
+          "long": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor. Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam. Integer feugiat odio ut dictum viverra. Donec vehicula nisi placerat cursus mollis. Nunc aliquam tempor justo, ut sagittis nisi. Mauris ullamcorper quis nisl sed dictum. Maecenas quam risus, congue quis accumsan at, imperdiet sed lectus. Aliquam in est purus"
+        },
+        "details": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur.",
+          "Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac porttitor libero consectetur. Pellentesque diam dolor, tincidunt nec ante.",
+          "Pellentesque diam dolor, tincidunt nec ante congue, tincidunt facilisis tortor.",
+          "Mauris vitae massa molestie, sagittis ligula vel, egestas massa. Phasellus quis sodales augue. Donec nec ultricies diam.",
+          "Phasellus quis sodales augue. Integer feugiat odio ut dictum viverra."
+        ],
+        "imgViews": [
+          {
+            "src": "/images/products/headphones.png",
+            "alt": "Great watch"
+          },
+          {
+            "src": "/images/products/headphones-2.png",
+            "alt": "great watch"
+          },
+          {
+            "src": "/images/products/headphones-3.png",
+            "alt": "great watch"
+          }
+        ],
+        "detailedProductViews": [
+          "description",
+          "additional info",
+          "reviews",
+          "video"
+        ]
+      }
+    ],
+    "featured": [
+      {
+        "id": 1,
+        "name": "Watches",
+        "code": "Y523201",
+        "originalPrice": 55,
+        "discountedPrice": 35,
+        "img": {
+          "src": "/images/products/watches.png",
+          "alt": "Great watch"
+        }
+      },
+      {
+        "id": 2,
+        "name": "Headphones",
+        "code": "Y523201",
+        "originalPrice": 99,
+        "discountedPrice": 89,
+        "img": {
+          "src": "/images/products/headphones.png",
+          "alt": "Great watch"
+        }
+      },
+      {
+        "id": 3,
+        "name": "Laptop",
+        "code": "Y523201",
+        "originalPrice": 3500,
+        "discountedPrice": 2999,
+        "img": {
+          "src": "/images/products/laptop.png",
+          "alt": "Great watch"
+        }
+      },
+      {
+        "id": 4,
+        "name": "Black watches",
+        "code": "Y523201",
+        "originalPrice": 62,
+        "discountedPrice": 42,
+        "img": {
+          "src": "/images/products/black-watches.png",
+          "alt": "Great watch"
+        }
+      },
+      {
+        "id": 5,
+        "name": "Game console",
+        "code": "Y523201",
+        "originalPrice": 89,
+        "discountedPrice": 76,
+        "img": {
+          "src": "/images/products/game-console.png",
+          "alt": "Great game console"
+        }
+      },
+      {
+        "id": 6,
+        "name": "Shoes",
+        "code": "Y523201",
+        "originalPrice": 75,
+        "discountedPrice": 57,
+        "img": {
+          "src": "/images/products/shoes.png",
+          "alt": "Great shoes"
+        }
+      },
+      {
+        "id": 7,
+        "name": "Perfume",
+        "code": "Y523201",
+        "originalPrice": 29,
+        "discountedPrice": 19,
+        "img": {
+          "src": "/images/products/perfume.png",
+          "alt": "Great perfume"
+        }
+      },
+      {
+        "id": 8,
+        "name": "Present box",
+        "code": "Y523201",
+        "originalPrice": 29,
+        "discountedPrice": 12,
+        "img": {
+          "src": "/images/products/present-box.png",
+          "alt": "Great present box"
+        }
+      },
+      {
+        "id": 9,
+        "name": "Watches",
+        "code": "Y523201",
+        "originalPrice": 76,
+        "discountedPrice": 67,
+        "img": {
+          "src": "/images/products/smart-watches.png",
+          "alt": "Great smart watch"
+        }
+      },
+      {
+        "id": 10,
+        "name": "Ring",
+        "code": "Y523201",
+        "originalPrice": 65,
+        "discountedPrice": 56,
+        "img": {
+          "src": "/images/products/ring.png",
+          "alt": "Great ring"
+        }
+      },
+      {
+        "id": 11,
+        "name": "Laptop3",
+        "code": "Y523201",
+        "originalPrice": 3500,
+        "img": {
+          "src": "/images/products/laptop.png",
+          "alt": "Great watch"
+        }
+      },
+      {
+        "id": 12,
+        "name": "Black watches3",
+        "code": "Y523201",
+        "originalPrice": 62,
+        "img": {
+          "src": "/images/products/black-watches.png",
+          "alt": "Great watch"
+        }
+      },
+      {
+        "id": 13,
+        "name": "Black watches4",
+        "code": "Y523201",
+        "originalPrice": 62,
+        "img": {
+          "src": "/images/products/black-watches.png",
+          "alt": "Great watch"
+        }
+      }
+    ],
+    "latest": [
+      {
+        "id": 5,
+        "name": "Game console",
+        "code": "Y523201",
+        "originalPrice": 89,
+        "discountedPrice": 76,
+        "img": {
+          "src": "/images/products/game-console.png",
+          "alt": "Great game console"
+        },
+        "set": "new-arrival"
+      },
+      {
+        "id": 6,
+        "name": "Shoes",
+        "code": "Y523201",
+        "originalPrice": 75,
+        "discountedPrice": 57,
+        "img": {
+          "src": "/images/products/shoes.png",
+          "alt": "Great shoes"
+        },
+        "set": "new-arrival"
+      },
+      {
+        "id": 7,
+        "name": "Perfume",
+        "code": "Y523201",
+        "originalPrice": 29,
+        "discountedPrice": 19,
+        "img": {
+          "src": "/images/products/perfume.png",
+          "alt": "Great perfume"
+        },
+        "set": "new-arrival"
+      },
+      {
+        "id": 8,
+        "name": "Present box",
+        "code": "Y523201",
+        "originalPrice": 29,
+        "discountedPrice": 12,
+        "img": {
+          "src": "/images/products/present-box.png",
+          "alt": "Great present box"
+        },
+        "set": "new-arrival"
+      },
+      {
+        "id": 9,
+        "name": "Watches",
+        "code": "Y523201",
+        "originalPrice": 76,
+        "discountedPrice": 67,
+        "img": {
+          "src": "/images/products/smart-watches.png",
+          "alt": "Great smart watch"
+        },
+        "set": "new-arrival"
+      },
+      {
+        "id": 10,
+        "name": "Ring",
+        "code": "Y523201",
+        "originalPrice": 65,
+        "discountedPrice": 56,
+        "img": {
+          "src": "/images/products/ring.png",
+          "alt": "Great ring"
+        },
+        "set": "new-arrival"
+      },
+      {
+        "id": 11,
+        "name": "Laptop2",
+        "code": "Y523201",
+        "originalPrice": 3500,
+        "img": {
+          "src": "/images/products/laptop.png",
+          "alt": "Great watch"
+        },
+        "set": "best-seller"
+      },
+      {
+        "id": 12,
+        "name": "Black watches3",
+        "code": "Y523201",
+        "originalPrice": 62,
+        "img": {
+          "src": "/images/products/black-watches.png",
+          "alt": "Great watch"
+        },
+        "set": "best-seller"
+      },
+      {
+        "id": 13,
+        "name": "Black watches4",
+        "code": "Y523201",
+        "originalPrice": 62,
+        "img": {
+          "src": "/images/products/black-watches.png",
+          "alt": "Great watch"
+        },
+        "set": "best-seller"
+      },
+      {
+        "id": 14,
+        "name": "Laptop3",
+        "code": "Y523201",
+        "originalPrice": 3500,
+        "img": {
+          "src": "/images/products/laptop.png",
+          "alt": "Great watch"
+        },
+        "set": "best-seller"
+      },
+      {
+        "id": 15,
+        "name": "Black watches5",
+        "code": "Y523201",
+        "originalPrice": 62,
+        "img": {
+          "src": "/images/products/black-watches.png",
+          "alt": "Great watch"
+        },
+        "set": "best-seller"
+      },
+      {
+        "id": 16,
+        "name": "Black watches6",
+        "code": "Y523201",
+        "originalPrice": 62,
+        "img": {
+          "src": "/images/products/black-watches.png",
+          "alt": "Great watch"
+        },
+        "set": "best-seller"
+      },
+      {
+        "id": 17,
+        "name": "Game console2",
+        "code": "Y523201",
+        "originalPrice": 89,
+        "discountedPrice": 76,
+        "img": {
+          "src": "/images/products/game-console.png",
+          "alt": "Great game console"
+        },
+        "set": "featured"
+      },
+      {
+        "id": 18,
+        "name": "Shoes2",
+        "code": "Y523201",
+        "originalPrice": 75,
+        "discountedPrice": 57,
+        "img": {
+          "src": "/images/products/shoes.png",
+          "alt": "Great shoes"
+        },
+        "set": "featured"
+      },
+      {
+        "id": 19,
+        "name": "Perfume2",
+        "code": "Y523201",
+        "originalPrice": 29,
+        "discountedPrice": 19,
+        "img": {
+          "src": "/images/products/perfume.png",
+          "alt": "Great perfume"
+        },
+        "set": "featured"
+      },
+      {
+        "id": 20,
+        "name": "Present box2",
+        "code": "Y523201",
+        "originalPrice": 29,
+        "discountedPrice": 12,
+        "img": {
+          "src": "/images/products/present-box.png",
+          "alt": "Great present box"
+        },
+        "set": "featured"
+      },
+      {
+        "id": 21,
+        "name": "Watches2",
+        "code": "Y523201",
+        "originalPrice": 76,
+        "discountedPrice": 67,
+        "img": {
+          "src": "/images/products/smart-watches.png",
+          "alt": "Great smart watch"
+        },
+        "set": "featured"
+      },
+      {
+        "id": 22,
+        "name": "Ring2",
+        "code": "Y523201",
+        "originalPrice": 65,
+        "discountedPrice": 56,
+        "img": {
+          "src": "/images/products/ring.png",
+          "alt": "Great ring"
+        },
+        "set": "featured"
+      },
+      {
+        "id": 23,
+        "name": "Present box2",
+        "code": "Y523201",
+        "originalPrice": 29,
+        "discountedPrice": 12,
+        "img": {
+          "src": "/images/products/present-box.png",
+          "alt": "Great present box"
+        },
+        "set": "special-offer"
+      },
+      {
+        "id": 24,
+        "name": "Watches2",
+        "code": "Y523201",
+        "originalPrice": 76,
+        "discountedPrice": 67,
+        "img": {
+          "src": "/images/products/smart-watches.png",
+          "alt": "Great smart watch"
+        },
+        "set": "special-offer"
+      },
+      {
+        "id": 25,
+        "name": "Ring2",
+        "code": "Y523201",
+        "originalPrice": 65,
+        "discountedPrice": 56,
+        "img": {
+          "src": "/images/products/ring.png",
+          "alt": "Great ring"
+        },
+        "set": "special-offer"
+      }
+    ],
+    "trending": [
+      {
+        "id": 4,
+        "name": "Black watches",
+        "code": "Y523201",
+        "originalPrice": 62,
+        "discountedPrice": 42,
+        "img": {
+          "src": "/images/products/black-watches.png",
+          "alt": "Great watch"
+        }
+      },
+      {
+        "id": 3,
+        "name": "Laptop",
+        "code": "Y523201",
+        "originalPrice": 3500,
+        "discountedPrice": 2999,
+        "img": {
+          "src": "/images/products/laptop.png",
+          "alt": "Great watch"
+        }
+      },
+      {
+        "id": 2,
+        "name": "Headphones",
+        "code": "Y523201",
+        "originalPrice": 99,
+        "discountedPrice": 89,
+        "img": {
+          "src": "/images/products/headphones.png",
+          "alt": "Great watch"
+        }
+      },
+      {
+        "id": 1,
+        "name": "Watches",
+        "code": "Y523201",
+        "originalPrice": 55,
+        "discountedPrice": 35,
+        "img": {
+          "src": "/images/products/watches.png",
+          "alt": "Great watch"
+        }
+      }
+    ]
+  }
+}

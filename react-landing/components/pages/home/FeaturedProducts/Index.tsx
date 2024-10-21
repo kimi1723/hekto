@@ -62,14 +62,17 @@ const FeaturedProducts = () => {
 };
 
 const handleDisplayProducts = (products: ProductType[]) =>
-  products.map(({ id, img, ...props }) => (
+  products.map(({ id, ...props }) => (
     <Product
       key={id}
       id={id}
       motionId={`featured-product-${id}`}
-      img={{ ...img, width: 304, height: 232 }}
       className="basis-1/4 max-w-[304px]"
-      {...props}
+      {...{
+        ...props,
+        img: { height: 232, width: 304, ...props.img },
+        discountedPrice: undefined,
+      }}
     />
   ));
 

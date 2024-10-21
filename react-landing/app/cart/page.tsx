@@ -1,18 +1,27 @@
-"use client";
+import {
+  HydrationBoundary,
+  QueryClient,
+  dehydrate,
+} from "@tanstack/react-query";
 
-// import { useQuery } from "@tanstack/react-query";
+import Cart from "@/components/pages/cart/Index";
 
-// import { fetchCart } from "@/server/utils/fetch-data";
-// import { PRODUCTS_KEY, CART_KEY } from "@/helpers/constants/query-keys";
+import { User } from "@/helpers/constants/query-keys";
+import { fetchCart } from "@/server/helpers/utils/fetch-data/fetch-user";
 
-const Cart = () => {
-  // const { data, isPending, isError, error } = useQuery({
-  //   queryKey: [PRODUCTS_KEY, CART_KEY],
-  //   queryFn: () => fetchCart(),
-  // });
-  // console.log(data);
+const CartPage = async () => {
+  const queryClient = new QueryClient();
 
-  return <h1>Cart!</h1>;
+  await queryClient.prefetchQuery({
+    queryKey: [User.Cart],
+    queryFn: () => fetchCart(),
+  });
+
+  return (
+    <HydrationBoundary state={dehydrate(queryClient)}>
+      <Cart />
+    </HydrationBoundary>
+  );
 };
 
-export default Cart;
+export default CartPage;

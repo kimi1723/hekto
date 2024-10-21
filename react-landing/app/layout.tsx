@@ -8,7 +8,8 @@ import MainNav from "@/components/layout/MainNav/Index";
 import QueryProvider from "@/providers/queryProvider";
 
 import { lato, josefin_sans } from "@/helpers/utils/fonts";
-import { saveUser } from "@/server/helpers/utils/utils";
+import saveUser from "@/server/helpers/utils/save-user";
+import Footer from "@/components/layout/Footer/Index";
 
 export const metadata: Metadata = {
   title: "Hekto",
@@ -36,6 +37,8 @@ const RootLayout = async ({
           </div>
 
           {children}
+
+          <Footer />
         </QueryProvider>
       </body>
     </html>

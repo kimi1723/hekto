@@ -12,14 +12,14 @@ interface UseFavoriteMutationProps extends Product {
   setIsFavorite: Dispatch<SetStateAction<boolean>>;
 }
 
-const useFavoriteMutation = ({
+const useFavoritesMutation = ({
   id,
   isFavorite,
   setIsFavorite,
   ...props
 }: UseFavoriteMutationProps) =>
   useMutation({
-    mutationFn: () => sendData(User.Favorites, id),
+    mutationFn: () => sendData({ variant: User.Favorites, productId: id }),
     onMutate: () => {
       const prevFavorites =
         queryClient.getQueryData<Product[]>([User.Favorites]) || [];
@@ -51,4 +51,4 @@ const useFavoriteMutation = ({
     },
   });
 
-export default useFavoriteMutation;
+export default useFavoritesMutation;

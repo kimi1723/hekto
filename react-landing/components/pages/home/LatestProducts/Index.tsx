@@ -57,7 +57,7 @@ const LatestProducts = () => {
       <Carousel
         id={CAROUSEL_ID}
         aria-labelledby={HEADER_ID}
-        className="flex flex-wrap gap-8 min-h-[639.95px]"
+        className="flex flex-wrap items-start gap-8 min-h-[639.95px]"
         {...props}
         {...{ handleDisplayError, handleDisplayPending }}
       />

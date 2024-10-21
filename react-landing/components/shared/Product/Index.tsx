@@ -1,12 +1,13 @@
-import { queryClient } from "@/providers/queryProvider";
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
+
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { queryClient } from "@/providers/queryProvider";
 
 import useUserQuery from "@/helpers/queries/User/useUserQuery";
 import useCartMutation from "@/helpers/queries/Cart/useCartMutation";
-import useFavoriteMutation from "@/helpers/queries/Favorites/useFavoritesMutation";
+import useFavoritesMutation from "@/helpers/queries/Favorites/useFavoritesMutation";
 
 import Modal from "../Modal/Index";
 import ShadowedProduct from "./components/ShadowedProduct";
@@ -20,6 +21,8 @@ const Product = ({
   motionId,
   img: { src, alt, height, width },
   type = "shadowed",
+  className = "",
+  buttonMenu = true,
   ...props
 }: ProductProps) => {
   const { data, isPending, isError, error } = useUserQuery();
@@ -29,6 +32,7 @@ const Product = ({
   const [isFavorite, setIsFavorite] = useState(false);
   const [isInCart, setIsInCart] = useState(false);
   const [isInitialInCart, setIsInitialInCart] = useState(true);
+  const [isInitial, setIsInitial] = useState(true);
 
   const cartMutation = useCartMutation({
     id,
@@ -37,7 +41,7 @@ const Product = ({
     img: { src, alt },
     ...props,
   });
-  const favMutation = useFavoriteMutation({
+  const favMutation = useFavoritesMutation({
     id,
     isFavorite,
     setIsFavorite,
@@ -60,8 +64,13 @@ const Product = ({
     setIsFavorite(isFavorite);
     setIsInCart(isAlreadyInCart);
 
-    if (isAlreadyInCart) setTimeout(() => setIsInitialInCart(false), 1200);
-  }, [id, data]);
+    if (isInitial && isAlreadyInCart) setIsInitialInCart(false);
+
+    if (!isInitial && isAlreadyInCart)
+      setTimeout(() => setIsInitialInCart(false), 1200);
+
+    setIsInitial(false);
+  }, [id, data, isInitial]);
 
   if (isPending) return <p>Loading {props.name}....</p>;
 
@@ -77,7 +86,7 @@ const Product = ({
 
   const handleBlur = () => setIsFocused(false);
 
-  const handleAddToCart = () => cartMutation.mutate();
+  const handleAddToCart = () => cartMutation.mutate(undefined);
 
   const handleToggleFavorite = () => favMutation.mutate();
 
@@ -98,11 +107,13 @@ const Product = ({
   return (
     <>
       <ProductEl
-        href={`products/${id}`}
+        className={className}
+        href={`/products/${id}`}
         motionId={motionId}
         img={{ src, alt, height, width }}
         {...props}
         {...{
+          buttonMenu,
           isActive,
           isFavorite,
           isInCart,
@@ -116,21 +127,27 @@ const Product = ({
           handleZoom,
         }}
       />
-      {createPortal(
-        <Modal
-          isOpen={isZoomed}
-          onClose={handleCloseZoom}
-          className="bg-[transparent]"
-        >
-          <motion.div
-            layoutId={motionId}
-            transition={{ duration: 0.75, type: "spring", bounce: 0 }}
+      {buttonMenu &&
+        createPortal(
+          <Modal
+            isOpen={isZoomed}
+            onClose={handleCloseZoom}
+            className="bg-[transparent]"
           >
-            <Image alt={alt} src={src} width={width * 2} height={height * 2} />
-          </motion.div>
-        </Modal>,
-        document.getElementById("app") as HTMLBodyElement
-      )}
+            <motion.div
+              layoutId={motionId}
+              transition={{ duration: 0.75, type: "spring", bounce: 0 }}
+            >
+              <Image
+                alt={alt}
+                src={src}
+                width={width * 2}
+                height={height * 2}
+              />
+            </motion.div>
+          </Modal>,
+          document.getElementById("app") as HTMLBodyElement
+        )}
     </>
   );
 };

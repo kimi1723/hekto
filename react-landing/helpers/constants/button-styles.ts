@@ -1,5 +1,5 @@
 export const buttonSizes = {
-  sm: "py-[11px] px-4",
+  sm: "py-2 px-4",
   default: "py-4 p-10",
 } as const;
 
