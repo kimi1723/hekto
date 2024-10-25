@@ -12,7 +12,7 @@ const fetchProducts = async (
   price?: string
 ) => {
   try {
-    const { data } = await fetchData("products");
+    const data = await fetchData("products");
     const filteredData = data[variant];
 
     if (!filteredData)

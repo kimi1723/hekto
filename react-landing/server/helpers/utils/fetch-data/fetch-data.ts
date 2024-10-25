@@ -8,10 +8,7 @@ import {
 } from "../../types/data-types";
 
 type FetchDataReturnType = {
-  products: {
-    data: ProductsData;
-    totalCount: number;
-  };
+  products: ProductsData;
   users: UsersData;
   pages: PagesData;
 };
@@ -39,19 +36,7 @@ const fetchData = async <K extends keyof typeof DATA_API_VARIANTS>(
     if (!res.ok)
       throw new Error(`Error occured when receiving the response for ${key}".`);
 
-    const parsedRes = await res.json();
-
-    if (key !== "products") return parsedRes;
-
-    const totalCountStr = res.headers.get("X-Total-Count");
-    const totalCount = totalCountStr ? parseInt(totalCountStr, 10) : 0;
-
-    return {
-      data: parsedRes,
-      totalCount,
-    } as FetchDataReturnType[K];
-
-    return parsedRes;
+    return await res.json();
   } catch (error) {
     if (error instanceof Error) throw error;
 

@@ -3,7 +3,7 @@ import { useState, type ReactNode } from "react";
 
 interface UseCarouselProps<T> {
   queryKey: string[];
-  queryFn: () => Promise<{ data: T[]; totalCount: number } | T[]>;
+  queryFn: () => Promise<{ data: T[]; totalPages: number } | T[]>;
   handleDisplayData: (data: T[]) => ReactNode;
   dataPerView?: number;
   customFilter?: keyof T;
