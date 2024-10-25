@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { queryClient } from "@/providers/queryProvider";
 
 import useCartMutation from "@/helpers/queries/Cart/useCartMutation";
 import useFavoritesMutation from "@/helpers/queries/Favorites/useFavoritesMutation";
@@ -6,14 +7,13 @@ import useFavoritesQuery from "@/helpers/queries/Favorites/useFavoritesQuery";
 
 import Heading from "@/components/shared/Typography/Heading";
 import Label from "@/components/shared/Typography/Label";
-import Icon from "@/components/shared/GetSvg/Index";
+import Stars from "@/components/shared/Stars/Index";
 import Button from "@/components/shared/Button/Index";
 import HeartIcon from "@/components/shared/ProductButtonMenu/components/HeartIcon";
 
 import { User } from "@/helpers/constants/query-keys";
-import { queryClient } from "@/providers/queryProvider";
+import { MAX_STARS } from "@/helpers/constants/constants";
 
-import { activeStar, star } from "@/helpers/constants/icons";
 import { type Product } from "@/server/helpers/types/data-types";
 
 const ProductDescription = ({ data }: { data: Product }) => {
@@ -58,17 +58,9 @@ const ProductDescription = ({ data }: { data: Product }) => {
 
       <div className="flex flex-col gap-6">
         <div className="flex gap-2">
-          {Array.from({ length: rating }, (_, i) => i).map((i) => (
-            <Icon
-              key={`active-star-${i}`}
-              id={activeStar}
-              className="text-secondary"
-            />
-          ))}
+          <Stars count={rating} />
 
-          {Array.from({ length: MAX_RATING - rating }, (_, i) => (
-            <Icon key={`empty-star-${i}`} id={star} className="text-grey-2" />
-          ))}
+          <Stars count={MAX_STARS - rating} name="empty-star" active={false} />
         </div>
 
         <p className="flex gap-4 items-center">
@@ -103,7 +95,5 @@ const ProductDescription = ({ data }: { data: Product }) => {
     </section>
   );
 };
-
-const MAX_RATING = 5;
 
 export default ProductDescription;

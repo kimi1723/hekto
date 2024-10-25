@@ -1,23 +1,22 @@
-export const FILES_MAP = {
+import { FilterElement } from "@/components/pages/products/components/FiltersBar/Filter";
+import { BgVariantsKeys } from "@/helpers/constants/colors";
+
+export const DATA_API_VARIANTS = {
   products: {
-    path: "products.json",
     variants: ["all", "featured", "latest", "trending"],
   },
   users: {
-    path: "users.json",
     variants: ["all", "cart", "favorites"],
   },
   pages: {
-    path: "pages.json",
-    variants: ["home"],
+    variants: ["home", "products"],
   },
 } as const;
 
-export type Key = keyof typeof FILES_MAP;
+export type Key = keyof typeof DATA_API_VARIANTS;
 
-export type FileNames = (typeof FILES_MAP)[Key]["path"];
-
-export type Variants<T extends Key> = (typeof FILES_MAP)[T]["variants"][number];
+export type Variants<T extends Key> =
+  (typeof DATA_API_VARIANTS)[T]["variants"][number];
 
 export type ProductsVariants = Variants<"products">;
 export type UsersVariants = Variants<"users">;
@@ -54,8 +53,9 @@ export type ProductsData = {
   [K in ProductsVariants]: Product[];
 };
 
+export type ProductSortBy = "high-to-low" | "low-to-high";
 export interface User {
-  id: number;
+  id: string;
   cart: Product[];
   favorites: Product[];
 }
@@ -126,6 +126,14 @@ export interface PagesData {
       };
     }[];
   };
+  products: {
+    filters: {
+      name: string;
+      queryParamKey: string;
+      variant: BgVariantsKeys;
+      elements: FilterElement[];
+    }[];
+  };
 }
 
 export type HomeViews = keyof PagesData["home"];
@@ -135,3 +143,5 @@ export type HomeDiscountItems = PagesData["home"]["discountItems"];
 export type HomeCategory = PagesData["home"]["topCategories"];
 
 export type HomeBlogPosts = PagesData["home"]["latestBlog"];
+
+export type ProductsPageVariants = keyof PagesData["products"];

@@ -17,6 +17,8 @@ const ICON_IDS = {
   instagram: "ig",
   star: "star",
   activeStar: "star-active",
+  viewGrid: "view-grid",
+  viewList: "view-grid-active",
 } as const;
 
 export const {
@@ -38,6 +40,8 @@ export const {
   instagram,
   star,
   activeStar,
+  viewGrid,
+  viewList,
 } = ICON_IDS;
 
 export const SOCIALS = [facebook, twitter, instagram];

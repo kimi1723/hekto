@@ -32,7 +32,7 @@ async function fetchUserData<T extends UsersVariants>(variant: T = "all" as T) {
 
   try {
     const data = await fetch("users");
-    const user = data.find((user) => +user.id === +id);
+    const user = data.find((user) => user.id === id);
 
     if (!user) throw new Error(`User with ID: "${id}" not found.`);
 

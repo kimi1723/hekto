@@ -11,3 +11,20 @@ export type HocusVariantsKeys = keyof typeof HOCUS_VARIANTS;
 export interface HocusVariantsProps {
   variant?: keyof typeof HOCUS_VARIANTS;
 }
+
+export const BG_VARIANTS = {
+  primary: {
+    active: "bg-primary",
+    inactive: "bg-primary-light",
+  },
+  secondary: {
+    active: "bg-secondary",
+    inactive: "bg-secondary-light",
+  },
+  info: {
+    active: "bg-info",
+    inactive: "bg-info-light",
+  },
+};
+
+export type BgVariantsKeys = keyof typeof BG_VARIANTS;

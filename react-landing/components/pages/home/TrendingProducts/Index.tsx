@@ -13,6 +13,8 @@ const TrendingProducts = () => {
     Products.Trending
   );
 
+  const trendingProducts = data ? data.data : [];
+
   return (
     <Section className="my-[100px]">
       <Heading variant="secondary" className="text-center mb-[72px]">
@@ -25,7 +27,7 @@ const TrendingProducts = () => {
 
       {data && (
         <div className="flex gap-8">
-          {data.map(({ id, ...data }) => (
+          {trendingProducts.map(({ id, ...data }) => (
             <Product
               key={id}
               id={id}

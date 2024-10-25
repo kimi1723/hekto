@@ -52,5 +52,3 @@ const MainNav = () => {
 };
 
 export default MainNav;
-
-//TODO: (after completing products page) move input to a separate component and add logic for searching

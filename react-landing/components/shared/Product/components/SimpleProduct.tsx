@@ -14,7 +14,7 @@ const SimpleProduct = ({
   href,
   img: { alt, src, width, height },
   discountedPrice,
-  className,
+  className = "",
   isActive,
   handleMouseEnter,
   handleMouseLeave,
@@ -38,7 +38,7 @@ const SimpleProduct = ({
         className="relative mb-[12px]"
         style={{ height: `${height}px`, width: `${width}px` }}
       >
-        <Image alt={alt} src={src} fill />
+        <Image alt={alt} src={src} fill  />
       </motion.div>
 
       <ProductButtonMenu

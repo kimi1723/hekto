@@ -24,7 +24,7 @@ interface ProductProps extends Omit<LinkProps, "href"> {
   code?: string;
   className?: string;
   href?: Url;
-  type?: "shadowed" | "simple";
+  type?: "shadowed" | "simple" | "detailed-wide" | "detailed-card";
   total: number;
   buttonMenu?: boolean;
   viewDetailsButton?: boolean;

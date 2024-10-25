@@ -1,16 +1,17 @@
 "use server";
 
-import { API_URL } from "./../../constants/constants";
-
 import {
-  FILES_MAP,
+  DATA_API_VARIANTS,
   type PagesData,
   type ProductsData,
   type UsersData,
 } from "../../types/data-types";
 
 type FetchDataReturnType = {
-  products: ProductsData;
+  products: {
+    data: ProductsData;
+    totalCount: number;
+  };
   users: UsersData;
   pages: PagesData;
 };
@@ -20,22 +21,37 @@ interface FetchConfig extends RequestInit {
   body?: string;
 }
 
-const fetchData = async <K extends keyof typeof FILES_MAP>(
-  key: K,
-  config: FetchConfig = {
-    headers: {
-      "ngrok-skip-browser-warning": "true",
-    },
+const basicConfig = {
+  headers: {
+    "ngrok-skip-browser-warning": "true",
   },
+};
+
+const fetchData = async <K extends keyof typeof DATA_API_VARIANTS>(
+  key: K,
+  config: FetchConfig = basicConfig,
   additionalPath: string = ""
 ): Promise<FetchDataReturnType[K]> => {
   try {
+    const { API_URL } = process.env;
     const res = await fetch(`${API_URL}/${key}/${additionalPath}`, config);
 
     if (!res.ok)
       throw new Error(`Error occured when receiving the response for ${key}".`);
 
-    return res.json();
+    const parsedRes = await res.json();
+
+    if (key !== "products") return parsedRes;
+
+    const totalCountStr = res.headers.get("X-Total-Count");
+    const totalCount = totalCountStr ? parseInt(totalCountStr, 10) : 0;
+
+    return {
+      data: parsedRes,
+      totalCount,
+    } as FetchDataReturnType[K];
+
+    return parsedRes;
   } catch (error) {
     if (error instanceof Error) throw error;
 

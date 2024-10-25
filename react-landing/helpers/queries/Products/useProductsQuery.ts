@@ -1,4 +1,8 @@
-import { useQuery, type UseQueryOptions } from "@tanstack/react-query";
+import {
+  useQuery,
+  keepPreviousData,
+  type UseQueryOptions,
+} from "@tanstack/react-query";
 
 import { Products } from "@/helpers/constants/query-keys";
 import fetchProducts, {
@@ -9,10 +13,18 @@ import {
   type Product,
 } from "@/server/helpers/types/data-types";
 
-const useProductsQuery = (variant: ProductsVariants = "all") =>
+const useProductsQuery = (
+  variant: ProductsVariants = "all",
+  page?: number,
+  limit?: number,
+  sortBy?: string,
+  filterPrice?: string
+) =>
   useQuery({
-    queryKey: [variant],
-    queryFn: () => fetchProducts(variant),
+    queryKey: [variant, page, limit, sortBy, filterPrice],
+    queryFn: () => fetchProducts(variant, page, limit, sortBy, filterPrice),
+    placeholderData:
+      page && limit ? keepPreviousData : { data: [], totalPages: 0 },
   });
 
 type UseProductQueryOptions = Omit<

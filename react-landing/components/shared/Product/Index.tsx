@@ -15,6 +15,7 @@ import SimpleProduct from "./components/SimpleProduct";
 
 import { User } from "@/helpers/constants/query-keys";
 import type ProductProps from "@/helpers/types/product";
+import DetialedProduct from "./components/DetailedProduct";
 
 const Product = ({
   id,
@@ -100,6 +101,10 @@ const Product = ({
     case "simple":
       ProductEl = SimpleProduct;
       break;
+    case "detailed-wide":
+    case "detailed-card":
+      ProductEl = DetialedProduct;
+      break;
     default:
       ProductEl = ShadowedProduct;
   }
@@ -111,7 +116,7 @@ const Product = ({
         href={`/products/${id}`}
         motionId={motionId}
         img={{ src, alt, height, width }}
-        {...props}
+        {...{ ...props, wide: type === "detailed-wide" }}
         {...{
           buttonMenu,
           isActive,
@@ -153,5 +158,3 @@ const Product = ({
 };
 
 export default Product;
-
-//TODO: skeleton loader

@@ -1,11 +1,13 @@
 "use server";
 
+import fetchData from "./fetch-data";
+
 import {
   PagesData,
   type HomeViews,
   type PagesVariants,
+  type ProductsPageVariants,
 } from "../../types/data-types";
-import fetchData from "./fetch-data";
 
 const fetchPage = async <T extends PagesVariants>(
   variant: T
@@ -31,6 +33,14 @@ export const fetchHomePage = async <T extends HomeViews>(
   const homeData = await fetchPage("home");
 
   return homeData[view];
+};
+
+export const fetchProductsPage = async <T extends ProductsPageVariants>(
+  variant: T
+): Promise<PagesData["products"][T]> => {
+  const productsPageData = await fetchPage("products");
+
+  return productsPageData[variant];
 };
 
 export default fetchPage;

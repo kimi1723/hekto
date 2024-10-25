@@ -52,5 +52,3 @@ const Cart = () => {
 };
 
 export default Cart;
-
-//TODO: fix padding being added, rather than reset to 0

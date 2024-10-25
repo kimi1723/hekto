@@ -11,7 +11,7 @@ const saveUser = async () => {
 
   try {
     const users = await fetch("users");
-    const user = users.find((user) => +user.id === +id);
+    const user = users.find((user) => user.id === id);
 
     if (user) return;
 

@@ -16,6 +16,7 @@ enum PAGES_QUERY_KEYS {
   HomeDiscountItems = "home-discount-items",
   HomeTopCategories = "home-top-categories",
   HomeLatestBlog = "home-latest-blog",
+  ProductsFilters = "products-page-filters",
 }
 
 const QUERY_KEYS = {
@@ -32,10 +33,13 @@ const QUERY_KEYS = {
     TopCategories: PAGES_QUERY_KEYS.HomeTopCategories,
     LatestBlog: PAGES_QUERY_KEYS.HomeLatestBlog,
   },
+  ProductsPage: {
+    Filters: PAGES_QUERY_KEYS.ProductsFilters,
+  },
   User: {
     ...USER_QUERY_KEYS,
     All: [USER_QUERY_KEYS.Favorites, USER_QUERY_KEYS.Cart],
   },
 } as const;
 
-export const { Products, Home, User } = QUERY_KEYS;
+export const { Products, Home, ProductsPage, User } = QUERY_KEYS;

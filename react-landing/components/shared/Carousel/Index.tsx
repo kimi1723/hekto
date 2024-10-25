@@ -5,12 +5,12 @@ interface CarouselProps {
   id: string;
   direction: 1 | -1;
   view: number;
-  isPending: boolean;
-  isError: boolean;
-  error: Error | null;
   displayedData: ReactNode;
-  handleDisplayPending: () => ReactNode;
-  handleDisplayError: (error: Error) => ReactNode;
+  isPending?: boolean;
+  isError?: boolean;
+  error?: Error | null;
+  handleDisplayPending?: () => ReactNode;
+  handleDisplayError?: (error: Error) => ReactNode;
   initial?: boolean;
   initialDuration?: number;
   initialSlideIn?: number | string;
@@ -42,9 +42,9 @@ const Carousel = ({
     if (displayedData) setIsFirstRender(false);
   }, [displayedData]);
 
-  if (isPending) return handleDisplayPending();
+  if (isPending && handleDisplayPending) return handleDisplayPending();
 
-  if (isError) return handleDisplayError(error as Error);
+  if (isError && handleDisplayError) return handleDisplayError(error as Error);
 
   const variants = {
     initial: (direction: number) => ({
