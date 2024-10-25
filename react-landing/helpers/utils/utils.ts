@@ -31,10 +31,10 @@ export const handleParamsChange = ({
   router: AppRouterInstance;
 }) => {
   const currentParams = new URLSearchParams(searchParams);
-  const currentParamExists = currentParams.get(key);
+  const currentParam = currentParams.get(key);
 
-  if (currentParamExists) currentParams.delete(key);
+  if (currentParam && currentParam === value) currentParams.delete(key);
   else currentParams.set(key, value);
 
-  router.push(`?${currentParams.toString()}`);
+  router.push(`?${currentParams.toString()}`, { scroll: false });
 };
